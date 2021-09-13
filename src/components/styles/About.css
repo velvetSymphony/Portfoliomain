@@ -1,0 +1,53 @@
+.box-container{
+    position:sticky;
+    height: 800px;
+    width: 100%;
+    background-color: transparent;
+}
+h1{
+    text-align: center;
+}
+.outline1 {
+    width: 80%;
+    height: 2px;
+    background-color: #b83a5a;
+    border-radius: 5%;
+    margin: 0 auto;
+    
+  }
+.content-container{
+    position: sticky;
+    width: 97%;
+}
+.info-container{
+    margin-top: 5%; 
+    width: 100%;  
+    text-align: center;
+}
+#name, #degree{
+    font-size: 1rem;
+}
+#me-info{
+    font-size: 12px;
+    text-align: center;
+}
+.skills-container{
+    text-align: center;
+    margin-top: 20%;
+    width: 95vw;
+}
+.skills-container h2 {
+    font-size: 26px;
+  }
+
+.skills-cover1, .skills-cover2 {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.skill >p{
+    font-size: 16px !important;
+    text-align: center;
+}

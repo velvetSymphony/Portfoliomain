@@ -1,0 +1,70 @@
+.whatdo {
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.outline2 {
+    width: 80%;
+    height: 2px;
+    background-color: #b83a5a;
+    border-radius: 5%;
+    margin: 0 auto;
+    
+}
+
+.items {
+    margin-top: 120px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.item-1 {
+    margin-bottom: 120px;
+}
+
+.icon-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 800px;
+}
+
+.css-1ie873t {
+    display: flex;
+    width: -webkit-fill-available;
+}
+
+.icon-style>img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 80px;
+    width: 400px;
+    transform: scale(0.5);
+}
+
+.icon-content {
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.icon-title {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.icon-text {
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+}
