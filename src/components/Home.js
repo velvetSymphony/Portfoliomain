@@ -2,9 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import './styles/Home.css';
 
 const Home = () => {
   return (
+    <div className="space-top">
     <motion.div
       className="home"
       initial={{ opacity: 0 }}
@@ -43,7 +45,7 @@ const Home = () => {
         >
           My name is Abhishek and im your guest!
         </motion.p>
-
+       <div className="link-wrap">
         <motion.a className="Links" href="https://github.com/Abhishekcs96">
           <FaGithubSquare />
         </motion.a>
@@ -54,8 +56,10 @@ const Home = () => {
         >
           <FaLinkedin />
         </motion.a>
+        </div>
       </motion.div>
     </motion.div>
+    </div>
   );
 };
 
