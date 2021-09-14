@@ -1,7 +1,8 @@
 #Contacts {
-    padding: 50px;
+    padding: 40px;
     box-sizing: border-box;
-    margin-top: 8%;
+    margin-top: 30%;
+    
 }
 
 .contact-title {
@@ -20,26 +21,30 @@
     background-color: #272223f1;
     border-radius: 5%;
     margin: 0 auto;
-    
+
 
 }
 
-.form-container{
+.form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top:3% ;
+    margin-top: 3%;
     width: 70%;
 }
 
-.button-submit{
+.button-submit {
     margin-top: 10%;
 }
 
-.text-container{
+.button-submit:hover{
+    background-color: beige;
+}
+
+.text-container {
     margin-top: 2%;
     display: flex;
     flex-direction: column;
@@ -47,10 +52,58 @@
     align-items: center;
     text-align: center;
 }
-.text-container>p{
+
+.contact-para {
     font-size: 1rem;
     margin-bottom: 1%;
 }
-.text-container>h5{
+
+.header-five {
     font-size: 1rem;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:580px) {
+    #Contacts {
+        margin-top: 7%;
+    }
+    .contact-title {
+        overflow-y: hidden;
+    }
+
+    .header-five {
+        margin-top: 6%;
+        overflow-y: hidden;
+        font-size: 16px;
+    }
+    .contact-para{
+        font-size: 16px;
+    }
+    .button-submit:hover{
+        background-color: beige;
+    }
+    
+}
+
+
+@media screen and (min-width:581px) and (max-width:768px) {
+    #Contacts {
+        margin-top: 15%;
+    }
+    .contact-title {
+        overflow-y: hidden;
+    }
+    .header-five {
+        margin-top: 5%;
+        overflow-y: hidden;
+        font-size: 22px;
+    }
+    .contact-para{
+        font-size: 22px;
+    }
+    .button-submit:hover{
+        background-color: beige;
+    }
+    
 }

@@ -1,0 +1,30 @@
+#Portfolio{
+    height: 90vh;
+}
+
+.h3-responsive{
+    text-align: center;
+}
+
+
+@media screen and (min-width:320px) and (max-width:580px) {
+    #Portfolio{
+        height: 72vh;
+    }
+    
+    
+    .h3-responsive {
+        overflow-y: hidden;
+    }
+}
+
+
+@media screen and (min-width:581px) and (max-width:768px) {
+    #Portfolio{
+        height: 77vh;
+    }
+    
+    .h3-responsive {
+        overflow-y: hidden;
+    }
+}

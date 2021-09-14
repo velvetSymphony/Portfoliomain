@@ -1,7 +1,7 @@
 .navbar-container{
     
     background-color: #b83a5a ;
-    
+    overflow-y: hidden;
     display: flex;
     height: 14vh;
     text-align: center;

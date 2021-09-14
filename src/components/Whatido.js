@@ -7,14 +7,14 @@ import Image2 from './images/Rocket.png';
  
 const Whatido = () => {
   return (
-    <div>
+    <div className="Main-container">
       <h2 className="whatdo">What I do</h2>
       <div className="outline2"></div>
       <ul className="items">
         <li className="item-1">
         <Fade triggerOnce={true} duration="2000" direction ="right"  damping="0.5">
           <div className="icon-style">
-            <img src={Image2} alt='1'></img>
+            <img src={Image} alt='1'></img>
           
           <div className="icon-content">
             <div className="icon-title">Design!</div>
@@ -38,7 +38,7 @@ const Whatido = () => {
         <li className="item-1">
         <Fade triggerOnce={true} duration="2000" direction ="right"  damping="0.5">
           <div className="icon-style">
-          <img src={Image} alt='1'></img>
+          <img src={Image2} alt='1'></img>
           
           <div className="icon-content">
             <div className="icon-title">Build and Deploy!</div>

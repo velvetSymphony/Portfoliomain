@@ -15,7 +15,7 @@ const About = () => {
     <div className="box-container" id="About">
       <div className="content-container">
         <Fade duration="3000" triggeronce={true}>
-          <h1>About Myself</h1>
+          <h1 className="About">About Myself</h1>
           <div className="outline1"></div>
         </Fade>
         <div className="info-container">
@@ -31,7 +31,7 @@ const About = () => {
             for a client
           </p>
         </div>
-        <Fade triggerOnce={true} duration="2000" direction ="right"  damping="0.5">
+        <Fade triggerOnce={true} duration="2000" direction ="right"  >
           <div className="skills-container">
             <h2>My Skills</h2>
             <div className="skills-cover1">

@@ -8,8 +8,8 @@ const Contact = () => {
   return (
     <div className="box-container" id="Contacts">
       <div className="content-container">
-        <h2 className='contact-title'>Get In Touch</h2>
-        <p className="contact-description">Feel free to contact me and send me a message using the form below!, I always have a way to innovate things!</p>
+        <h2 className='contact-title'>Contact Me</h2>
+        <p className="contact-description">Feel free to get in touch and send me a message using the form below, I always have a way to innovate things!</p>
         <div className="outline3"></div>
         <div className="form-container">
           
@@ -29,9 +29,9 @@ const Contact = () => {
           <Button className ='button-submit' variant="outline-light" type="submit" >Submit</Button>
         </div>
         <div className="text-container">
-          <h5>Alternatively (if the above isn't working yet)</h5>
-          <p>Please contact me at</p>
-          <p>abhishekcs96@gmail.com</p>
+          <h5 className="header-five">Alternatively (if the above isn't working yet)</h5>
+          <p className ="contact-para">Please contact me at</p>
+          <p className ="contact-para">abhishekcs96@gmail.com</p>
         </div>
       </div>
     </div>
