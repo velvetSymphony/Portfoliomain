@@ -10,7 +10,7 @@
     margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 3%;
-    width: 85%;
+    width: 50vw;
     box-shadow: 3px 3px 10px 2px;
     transition: transform 0.5s;
     background: linear-gradient(135deg, #272223f1, #272223f1 50%, #b83a5a 75%, #b83a5a 75%);
