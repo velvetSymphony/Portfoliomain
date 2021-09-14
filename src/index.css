@@ -6,7 +6,7 @@
   color: #d199a7ce;
 }
 body{
-  background: linear-gradient(135deg, #272223f1, #272223f1  50%, #b83a5a 75%, #b83a5a 75%);
+  background: linear-gradient(135deg, #272223f1, #b83a5a  50%,#272223f1 75%,#b83a5a 50%, #272223f1 75%,#b83a5a 50%,  #b83a5a , #272223f1 75%);
   background-repeat: no-repeat;
   width: 100%;
 }

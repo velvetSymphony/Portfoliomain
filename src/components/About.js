@@ -31,7 +31,7 @@ const About = () => {
             for a client
           </p>
         </div>
-        <Fade triggerOnce={true} duration="2000" direction ="right"  >
+        <Fade triggerOnce={true} duration="2000" direction ="left"  >
           <div className="skills-container">
             <h2>My Skills</h2>
             <div className="skills-cover1">

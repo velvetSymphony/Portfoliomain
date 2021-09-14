@@ -25,6 +25,7 @@ const Mobilemenu = () => {
   return (
     <div className="mobile-navbar">
       <div className="mobile-container">
+        
         <Menu
           isOpen={menu}
           onStateChange={(state) => handlestatechange(state)}

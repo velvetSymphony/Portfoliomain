@@ -5,7 +5,8 @@ import './styles/Header.css';
 
 
 const Header = () => {
- 
+ let displaymenu = document.getElementsByClassName("navlinks");
+ console.log(displaymenu)
     return (
         
             <header className="header" >

@@ -53,16 +53,12 @@
     text-align: center;
     margin-top: 15%;
     width: 65vw;
-
 }
-
-
 
 .skills-container h2 {
     font-size: 26px;
     overflow-y: hidden;
 }
-
 .skills-cover1,
 .skills-cover2 {
     display: flex;
@@ -80,8 +76,19 @@
     .content-container {
         overflow-y: hidden;
     }
-}
+    #me-info{
+        width: 60vw;
+    }
+    #degree{
+        width:90vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .skills-container{
+        width: 75vw;
+    }
 
+}
 
 @media screen and (min-width:581px) and (max-width:768px) {
     .content-container {
