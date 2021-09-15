@@ -29,6 +29,13 @@
 
 .item-1 {
     margin-bottom:5%;
+    overflow: hidden;
+}
+.item-2{
+    overflow: hidden;
+}
+.item-3{
+    overflow: hidden;
 }
 
 .icon-style {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { Fade } from "react-awesome-reveal";
+import { Fade } from "react-reveal";
 import "./styles/Navbar.css";
 
 const Navbar = () => {

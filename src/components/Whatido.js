@@ -1,6 +1,6 @@
 import React from "react";
 import './styles/Whatido.css';
-import { Fade } from "react-awesome-reveal";
+import { Fade } from "react-reveal";
 import Image from './images/Paintbrush.png';
 import Image1 from './images/Laptop.png';
 import Image2 from './images/Rocket.png';
