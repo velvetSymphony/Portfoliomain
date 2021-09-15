@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from 'react-reveal';
+import { Fade, Flip } from 'react-reveal';
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { DiJavascript1 } from "react-icons/di";
@@ -14,10 +14,10 @@ const About = () => {
   return (
     <div className="box-container" id="About">
       <div className="content-container">
-        <Fade duration="3000" triggeronce={true}>
+        <Flip top cascade duration="500" triggeronce={true}>
           <h1 className="About">About Myself</h1>
           <div className="outline1"></div>
-        </Fade>
+        </Flip>
         <div className="info-container">
           <h5 id="name">Abhishek Chandra-sekar</h5>
           <h5 id="degree">2018-2020 M.E.Sc Telecommunications, UNSW Australia</h5>
@@ -31,8 +31,9 @@ const About = () => {
             for a client
           </p>
         </div>
-        <Fade triggerOnce={true} duration="2000" direction ="left"  >
+        
           <div className="skills-container">
+          <Fade right  triggerOnce={true} duration="2000">
             <h2>My Skills</h2>
             <div className="skills-cover1">
             <div className="skill">
@@ -70,8 +71,9 @@ const About = () => {
               <p>NodeJS</p>
             </div>
             </div>
+            </Fade>
           </div>
-        </Fade>
+        
       </div>
     </div>
   );

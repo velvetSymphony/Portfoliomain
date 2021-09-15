@@ -53,6 +53,7 @@
     text-align: center;
     margin-top: 15%;
     width: 65vw;
+    overflow: hidden;
 }
 
 .skills-container h2 {
