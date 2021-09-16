@@ -1,6 +1,11 @@
-.header{
-   position: fixed;
+#impheader{
+   position: absolute;
     width: 100%;
     z-index: 1;
-    top: 0;
+    bottom: 0;
+}
+
+#impheader2{
+    position:absolute;
+
 }

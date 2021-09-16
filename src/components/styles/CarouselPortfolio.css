@@ -1,5 +1,6 @@
 #Portfolio{
-    height: 90vh;
+    padding: 2vw 0px;
+    margin-top: 5vh;
 }
 
 .h3-responsive{
@@ -9,7 +10,7 @@
 
 @media screen and (min-width:320px) and (max-width:580px) {
     #Portfolio{
-        height: 72vh;
+        height: 100vh;
     }
     
     
@@ -21,7 +22,7 @@
 
 @media screen and (min-width:581px) and (max-width:768px) {
     #Portfolio{
-        height: 77vh;
+        height: 100vh;
     }
     
     .h3-responsive {

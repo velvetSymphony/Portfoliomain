@@ -1,9 +1,9 @@
-.box-container {
+#About{
     position: sticky;
     height: 800px;
     width: 100%;
     background-color: transparent;
-    margin-top: 10%;
+    padding-top: 5%;
 
 }
 
@@ -88,11 +88,17 @@
     .skills-container{
         width: 75vw;
     }
+    .About>span{
+        display: unset!important;
+    }
 
 }
 
 @media screen and (min-width:581px) and (max-width:768px) {
     .content-container {
         overflow-y: hidden;
+    }
+    .About>span{
+        display: unset!important;
     }
 }

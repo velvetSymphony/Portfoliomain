@@ -12,7 +12,7 @@ const Whatido = () => {
       <div className="outline2"></div>
       <ul className="items">
         <li className="item-1">
-        <Fade triggerOnce={true} duration="2000" direction ="right"  damping="0.5">
+        <Fade right triggerOnce={true} duration={2000}>
           <div className="icon-style">
             <img src={Image} alt='1'></img>
           
@@ -24,7 +24,7 @@ const Whatido = () => {
           </Fade>
         </li>
         <li className="item-1">
-        <Fade triggerOnce={true} duration="2000" direction ="left"  damping="0.5">
+        <Fade left triggerOnce={true} duration={2000}>
           <div className="icon-style">
           <img src={Image1} alt='1'></img>
           <div className="icon-content">
@@ -36,7 +36,7 @@ const Whatido = () => {
           </Fade>
         </li>
         <li className="item-1">
-        <Fade triggerOnce={true} duration="2000" direction ="right"  damping="0.5">
+        <Fade right triggerOnce={true} duration={2000} >
           <div className="icon-style">
           <img src={Image2} alt='1'></img>
           

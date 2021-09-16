@@ -1,10 +1,11 @@
 #Contacts {
-    padding: 40px;
-    box-sizing: border-box;
-    margin-top: 30%;
+    margin-top: 20vh;
+    height: 100vh;
     
 }
-
+#contentcontainer{
+  height: max-content;
+}
 .contact-title {
     text-align: center;
 }
@@ -22,7 +23,6 @@
     border-radius: 5%;
     margin: 0 auto;
 
-
 }
 
 .form-container {
@@ -32,8 +32,8 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
-    width: 70%;
+    margin-top: 3vh;
+    width: 70vw;
 }
 
 .button-submit {
@@ -66,14 +66,14 @@
 
 @media screen and (min-width:320px) and (max-width:580px) {
     #Contacts {
-        margin-top: 7%;
+        margin-top: 7vh;
     }
     .contact-title {
         overflow-y: hidden;
     }
 
     .header-five {
-        margin-top: 6%;
+        margin-top: 6vh;
         overflow-y: hidden;
         font-size: 16px;
     }
@@ -83,19 +83,25 @@
     .button-submit:hover{
         background-color: beige;
     }
+    .mb-3.input-group{
+            width: 65vw;
+    }
+    .input-group>.form-control, .input-group>.form-select {
+        height: 5vh;
+    }
     
 }
 
 
 @media screen and (min-width:581px) and (max-width:768px) {
     #Contacts {
-        margin-top: 15%;
+        margin-top: 15vh;
     }
     .contact-title {
         overflow-y: hidden;
     }
     .header-five {
-        margin-top: 5%;
+        margin-top: 5vh;
         overflow-y: hidden;
         font-size: 22px;
     }

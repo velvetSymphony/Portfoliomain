@@ -14,7 +14,7 @@ const About = () => {
   return (
     <div className="box-container" id="About">
       <div className="content-container">
-        <Flip top cascade duration="500" triggeronce={true}>
+        <Flip top cascade duration={500} triggeronce={true}>
           <h1 className="About">About Myself</h1>
           <div className="outline1"></div>
         </Flip>
@@ -33,7 +33,7 @@ const About = () => {
         </div>
         
           <div className="skills-container">
-          <Fade right  triggerOnce={true} duration="2000">
+          <Fade right  triggerOnce={true} duration={2000}>
             <h2>My Skills</h2>
             <div className="skills-cover1">
             <div className="skill">

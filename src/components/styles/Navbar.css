@@ -32,6 +32,9 @@
    .navlinks{
        display: none;
    }
+   .navbar-container{
+       display: none;
+   }
 }
 
 @media screen and (min-width:581px) and (max-width:769px) {
@@ -47,3 +50,4 @@
        font-size: 22px;
    }
 }
+

@@ -5,7 +5,7 @@ import "./styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <Fade duration="3000" triggerOnce={true}>
+    <Fade duration={3000} triggerOnce={true}>
       <div className="navbar-container">
         <Link
           className="navlinks"
@@ -15,7 +15,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           hashSpy={true}
-          offset={0}
+          offset={-150}
           duration={200}
         >
           <p id="About-bar">About</p>
@@ -28,7 +28,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           hashSpy={true}
-          offset={0}
+          offset={-160}
           duration={200}
         >
           <p id="Portfolio-bar">Portfolio</p>
@@ -41,7 +41,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           hashSpy={true}
-          offset={0}
+          offset={-180}
           duration={200}
         >
           <p id="Contacts-bar">Contacts</p>

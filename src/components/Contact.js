@@ -7,7 +7,7 @@ import './styles/Contact.css';
 const Contact = () => {
   return (
     <div className="box-container" id="Contacts">
-      <div className="content-container">
+      <div className="content-container" id='contentcontainer'>
         <h2 className='contact-title'>Contact Me</h2>
         <p className="contact-description">Feel free to get in touch and send me a message using the form below, I always have a way to innovate things!</p>
         <div className="outline3"></div>
