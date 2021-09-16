@@ -3,7 +3,7 @@
     background: linear-gradient(135deg, #272223f1 10%, #b83a5a  50%,#272223f1 75%,#b83a5a 50%, #272223f1 10%,#b83a5a 50%,  #b83a5a , #272223f1 10%);
     overflow-y: hidden;
     display: flex;
-    height: 12vh;
+    height: 8.5vh;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -15,6 +15,7 @@
 }
 .navlinks {
     margin-top: 2%;
+    font-size: 1rem;
     font-weight: 700;
     white-space: nowrap;
     width: 15%;

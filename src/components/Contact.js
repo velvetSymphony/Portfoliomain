@@ -21,9 +21,8 @@ const Contact = () => {
             <FormControl placeholder="Email"></FormControl>
           </InputGroup>
 
-          <InputGroup>
-            <InputGroup.Text>Leave a message</InputGroup.Text>
-            <FormControl as="textarea" label="textarea" />
+          <InputGroup className = "mb-3">
+            <FormControl as="textarea" placeholder='Leave a Message' label="textarea" />
           
           </InputGroup>
           <Button className ='button-submit' variant="outline-light" type="submit" >Submit</Button>

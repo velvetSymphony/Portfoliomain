@@ -6,7 +6,7 @@ import "./styles/Navbar.css";
 const Navbar = () => {
   return (
     <Fade duration={3000} triggerOnce={true}>
-      <div className="navbar-container">
+      <div className="navbar-container" id ='scrollfixing'>
         <Link
           className="navlinks"
           activeClass="active"

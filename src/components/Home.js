@@ -21,7 +21,12 @@ const Home = () => {
           <p className="para1">My name is Abhishek and im your guest!</p>
         </Zoom>
         <div className="link-wrap">
-          <a className="Links" href="https://github.com/Abhishekcs96">
+          <a
+            className="Links"
+            href="https://github.com/Abhishekcs96"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Fade top cascade delay={2000}>
               <FaGithubSquare />
             </Fade>
@@ -29,6 +34,8 @@ const Home = () => {
           <a
             className="Links"
             href="https://www.linkedin.com/in/abhishek-chandra-sekar-4018a8137/"
+            target="_blank"
+            rel="noreferrer"
           >
             <Fade top cascade delay={2000}>
               <FaLinkedin />

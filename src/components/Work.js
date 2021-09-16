@@ -47,10 +47,10 @@ const Work = () => {
             <img src={Image} alt="1" />
           </div>
           <div className="card-description">
-            <h3 className="h3-responsive">Weather</h3>
-            <p>Display weather data</p>
+            <h3 className="h3-responsive" id='app-title'>Weather</h3>
+            <p id='app-para'>Display weather data</p>
             <Button
-              variant="outline-dark"
+              variant="outline-light" id="buttonimp"
               onClick={(e) => {
                 sendit();
               }}
@@ -66,10 +66,10 @@ const Work = () => {
           </div>
 
           <div className="card-description">
-            <h3 className="h3-responsive">Weather</h3>
-            <p>Display weather data</p>
+            <h3 className="h3-responsive" id='app-title'>Weather</h3>
+            <p id='app-para'>Display weather data</p>
             <Button
-              variant="outline-dark"
+              variant="outline-light"
               onClick={(e) => {
                 sendit();
               }}
@@ -85,10 +85,10 @@ const Work = () => {
           </div>
 
           <div className="card-description">
-            <h3 className="h3-responsive">Weather</h3>
-            <p>Display weather data</p>
+            <h3 className="h3-responsive" id='app-title'>Weather</h3>
+            <p id='app-para'>Display weather data</p>
             <Button
-              variant="outline-dark"
+              variant="outline-light" className='btn-sm'
               onClick={(e) => {
                 sendit();
               }}

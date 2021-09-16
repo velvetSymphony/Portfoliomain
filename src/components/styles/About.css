@@ -91,6 +91,9 @@
     .About>span{
         display: unset!important;
     }
+    #About{
+        overflow-y: hidden;
+    }
 
 }
 

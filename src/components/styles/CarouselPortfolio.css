@@ -3,6 +3,16 @@
     margin-top: 5vh;
 }
 
+.carousel-container{
+    height: 80%;
+}
+.carousel-info{
+    height: 100%;
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+
 .h3-responsive{
     text-align: center;
 }
@@ -12,11 +22,15 @@
     #Portfolio{
         height: 100vh;
     }
-    
+    .owl-carousel.owl-loaded {
+        display: block;
+        height: 70vh;
+    }
     
     .h3-responsive {
         overflow-y: hidden;
     }
+   
 }
 
 
@@ -26,6 +40,9 @@
     }
     
     .h3-responsive {
+        overflow-y: hidden;
+    }
+    .carousel-info{
         overflow-y: hidden;
     }
 }

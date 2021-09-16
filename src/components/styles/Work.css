@@ -7,17 +7,17 @@
 
 .card {
     text-align: center;
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    width: 50vw;
-    box-shadow: 3px 3px 10px 2px;
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
     transition: transform 0.5s;
-    background: linear-gradient(135deg, #272223f1, #272223f1 50%, #b83a5a 75%, #b83a5a 75%);
+    background: linear-gradient(135deg, #272223f1, #b83a5a  50%,#272223f1 75%);
     background-repeat: no-repeat;
-    background-size: 'max-width';
+    background-size: 100%;
     background-position: 0;
 }
+
 
 .card-image {
     width:30%;
@@ -34,11 +34,42 @@
     .owl-stage{
         overflow-y: hidden;
     }
+    #app-title{
+        font-size: 1.2rem;
+        overflow: hidden;
+    }
+    #app-para{
+        font-size:1rem;
+        overflow: hidden;
+    }
+    .card{
+        height: 50vh;
+    }
+    .card-description{
+        overflow: hidden;
+    }
 }
 
 
 @media screen and (min-width:581px) and (max-width:768px) {
     .owl-stage{
         overflow-y: hidden;
+    }
+    .owl-stage-outer{
+        overflow-y: hidden;
+    }
+    #app-title{
+        font-size: 1.2rem;
+        overflow: hidden;
+    }
+    #app-para{
+        font-size:1rem;
+        overflow: hidden;
+    }
+    .card{
+        height: 50vh;
+    }
+    .card-description{
+        overflow: hidden;
     }
 }
