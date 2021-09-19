@@ -16,9 +16,27 @@ const Home = () => {
           delay={500}
           duration={900}
         >
-          <h1 className="head1">Welcome there!</h1>
-          <h3 className="head3">Aspiring Dev full time</h3>
-          <p className="para1">My name is Abhishek and im your guest!</p>
+          <h1 className="head1">Hello there!</h1>
+          </Zoom>
+          <Zoom
+          right
+          opposite
+          cascade
+          triggerOnce={true}
+          delay={2500}
+          duration={900}
+        >
+          <h3 className="head3">Welcome to my portfolio</h3>
+          </Zoom>
+          <Zoom
+          left
+          opposite
+          cascade
+          triggerOnce={true}
+          delay={3700}
+          duration={1500}
+        >
+          <p className="para1">My name is Abhishek and I'm an Aspiring Full-Stack Developer</p>
         </Zoom>
         <div className="link-wrap">
           <a
@@ -27,7 +45,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Fade top cascade delay={2000}>
+            <Fade top cascade delay={5000}>
               <FaGithubSquare />
             </Fade>
           </a>
@@ -37,7 +55,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Fade top cascade delay={2000}>
+            <Fade top cascade delay={5000}>
               <FaLinkedin />
             </Fade>
           </a>

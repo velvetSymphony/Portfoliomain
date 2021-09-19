@@ -20,10 +20,29 @@
 
 
 .card-image {
-    width:30%;
+    width:50%;
+    height: auto;
   margin: 0 auto;
   margin-bottom: 2%;
   margin-top: 4%;
+}
+
+#app-title{
+   font-size: 1.3rem;
+   text-decoration: underline;
+}
+#app-para{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+.button-containerimp{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2%;
 }
 
 .owl-dots{
@@ -35,11 +54,11 @@
         overflow-y: hidden;
     }
     #app-title{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         overflow: hidden;
     }
     #app-para{
-        font-size:1rem;
+        font-size:0.6rem;
         overflow: hidden;
     }
     .card{
@@ -48,6 +67,13 @@
     .card-description{
         overflow: hidden;
     }
+    .button-containerimp{
+        width: 100%;
+    }
+    .btn-sm{
+        transform: scale(0.5);
+    }
+    
 }
 
 

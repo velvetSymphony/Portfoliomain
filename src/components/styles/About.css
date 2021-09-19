@@ -33,16 +33,20 @@
     text-align: center;
 }
 
-#name,
+#name{
+    font-size: 1.1rem;
+    overflow-y: hidden;
+
+}
 #degree {
-    font-size: 1rem;
+    font-size: 0.8rem;
     overflow-y: hidden;
 }
 
 #me-info {
-    font-size: 12px;
+    font-size: 0.7rem;
     text-align: justify;
-    width: 55vw;
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,8 +55,8 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 15%;
-    width: 65vw;
+    margin-top: 7%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -62,14 +66,16 @@
 }
 .skills-cover1,
 .skills-cover2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+
+    /*display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
+    justify-content: space-between;*/
 }
 
-.skill>p {
-    font-size: 16px !important;
+#skill-desc {
+    font-size: 16px ;
     text-align: center;
 }
 
@@ -78,15 +84,27 @@
         overflow-y: hidden;
     }
     #me-info{
-        width: 60vw;
+        width: 85%;
+        font-size: 0.6rem;
+        margin-top: 5%;
     }
     #degree{
         width:90vw;
         margin-left:auto;
         margin-right:auto;
     }
+    .skill{  
+        width: 100%;
+    }
+    img, svg{
+        transform: scale(0.6);
+    }
     .skills-container{
-        width: 75vw;
+        width: 100vw;
+        overflow-y: auto;
+    }
+    #skill-desc{
+        font-size: 0.4rem;
     }
     .About>span{
         display: unset!important;

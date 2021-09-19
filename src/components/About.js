@@ -7,7 +7,7 @@ import { FaReact } from "react-icons/fa";
 import { DiSass } from "react-icons/di";
 import {FaBootstrap} from 'react-icons/fa';
 import { FaNode } from "react-icons/fa";
-import { SiCplusplus } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 import './styles/About.css';
 
 const About = () => {
@@ -19,16 +19,11 @@ const About = () => {
           <div className="outline1"></div>
         </Flip>
         <div className="info-container">
-          <h5 id="name">Abhishek Chandra-sekar</h5>
-          <h5 id="degree">2018-2020 M.E.Sc Telecommunications, UNSW Australia</h5>
+          <h3 id="name">Abhishek Chandra sekar</h3>
+          <h5 id="degree">Freelance Developer</h5>
+          <h5 id="degree">M.E.Sc Telecommunications, UNSW Australia, (2018-2020 Sept).</h5>
           <p id='me-info'>
-            My master’s degree was a specialisation in the field of
-            telecommunications and computer networks. Since my graduation, I
-            have transitioned to a more code-centric expertise after being
-            exposed to javascript during my final days of university. Currently
-            based in Sydney, I am a freelance developer with my first
-            opportunity to work in designing a personalised, wordpress website
-            for a client
+           I am a graduate from the University of New South Wales, Australia. I'm commited to constantly improving my skillset and I pride myself on dilligent work. Working with ReactJS currently, I made the transition to coding and front-end development during the time of my graduation and I am now completely involved in the development sphere. My projects involve using ReactJS as my go-to framework along with using Hooks, multiple React libraries, Redux and working with API's. I also tend to style my projects with vanilla CSS using SASS as my preferred pre-processor along with using some responsive libraries and frameworks such as Bootstrap, Material-UI and Semantic UI.
           </p>
         </div>
         
@@ -38,39 +33,39 @@ const About = () => {
             <div className="skills-cover1">
             <div className="skill">
               <AiFillHtml5 size={55} />
-              <p>HTML</p>
+              <p id='skill-desc'>HTML</p>
             </div>
             <div className="skill">
               <DiCss3 size={55} />
-              <p>CSS3</p>
+              <p id='skill-desc'>CSS3</p>
             </div>
             <div className="skill">
               <DiJavascript1 size={55} />
-              <p>JavaScript</p>
+              <p id='skill-desc'>JavaScript</p>
             </div>
             <div className="skill">
               <DiSass size={55} />
-              <p>Sass</p>
+              <p id='skill-desc'>Sass</p>
             </div>
-            </div>
-            <div className="skills-cover2">
+           
+            
             <div className="skill">
               <FaReact size={55} />
-              <p>React</p>
+              <p id='skill-desc'>React</p>
+            </div>
+            <div className="skill">
+              <SiRedux size={55} />
+              <p id='skill-desc'>Redux</p>
             </div>
             <div className="skill">
               <FaBootstrap size={55} />
-              <p>Bootstrap</p>
-            </div>
-            <div className="skill">
-              <SiCplusplus size={55} />
-              <p>C++</p>
+              <p id='skill-desc'>Bootstrap</p>
             </div>
             <div className="skill">
               <FaNode size={55} />
-              <p>NodeJS</p>
+              <p id='skill-desc'>NodeJS</p>
             </div>
-            </div>
+           </div>
             </Fade>
           </div>
         
