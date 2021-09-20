@@ -1,3 +1,7 @@
+This website was created using ReactJS and other React-libraries. Styled using CSS and bootstrap.
+Displays my portfolio.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
