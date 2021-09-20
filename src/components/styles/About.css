@@ -79,7 +79,7 @@
     text-align: center;
 }
 
-@media screen and (min-width:320px) and (max-width:580px) {
+@media all and (min-width:320px) and (max-width:580px) {
     .content-container {
         overflow-y: hidden;
     }
@@ -87,6 +87,7 @@
         width: 85%;
         font-size: 0.6rem;
         margin-top: 5%;
+        overflow-y: hidden;
     }
     #degree{
         width:90vw;
@@ -115,7 +116,7 @@
 
 }
 
-@media screen and (min-width:581px) and (max-width:768px) {
+@media all and (min-width:581px) and (max-width:768px) {
     .content-container {
         overflow-y: hidden;
     }

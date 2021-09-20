@@ -96,7 +96,7 @@
 }
 
 
-@media screen and (min-width:581px) and (max-width:768px) {
+@media all and (min-width:581px) and (max-width:768px) {
     #Contacts {
         margin-top: 15vh;
     }

@@ -72,7 +72,7 @@ path{
     align-items: center;
 }
 
-@media screen and (min-width:320px) and (max-width:579px) {
+@media all and (min-width:320px) and (max-width:579px) {
     .space-top {
         margin-top: 10%;
         overflow-y: hidden;
@@ -106,7 +106,7 @@ path{
     }
 }
 
-@media screen and (min-width:580px) and (max-width:768px) {
+@media all and (min-width:580px) and (max-width:768px) {
     .space-top {
         margin-top: 10vh;
         overflow-y: hidden;
