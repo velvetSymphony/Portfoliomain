@@ -77,7 +77,7 @@ const Work = () => {
           </div>
           <div className="card-description">
             <h3 className="h3-responsive" id='app-title'>Game-browsing App</h3>
-            <p id='app-para'>Interactive and responsive game-browsing list with sort and search functionality. Built using ReactJS, with Redux as the state library and Material UI along with CSS for styling</p>
+            <p id='app-para'>Interactive and responsive game-browsing list with sort and search functionality. Built using ReactJS, with Redux as the state library and Material UI along with CSS for styling.</p>
             <div className="button-containerimp">
             <Button
               variant="outline-light" id="buttonimp" className='btn-sm'
@@ -106,7 +106,7 @@ const Work = () => {
 
           <div className="card-description">
             <h3 className="h3-responsive" id='app-title'>Weather-Application</h3>
-            <p id='app-para'>A responsive weather application that displays weather data depending on your search query. Built using ReactJS and styled using vanilla CSS</p>
+            <p id='app-para'>A responsive weather application that displays weather data depending on your search query. Built using ReactJS and styled in SASS.</p>
             <div className="button-containerimp">
             <Button
               variant="outline-light" className='btn-sm'
@@ -135,7 +135,7 @@ const Work = () => {
 
           <div className="card-description">
             <h3 className="h3-responsive" id='app-title'>JavaScript-Calculator</h3>
-            <p id='app-para'>An interactive calculator with basic functionality. Built with Vanilla JavaScript and styled using CSS in SCSS(SASS) format.</p>
+            <p id='app-para'>An interactive calculator with basic functionality. Built with Vanilla JavaScript and styled using vanilla CSS.</p>
             <div className="button-containerimp">
             <Button
               variant="outline-light" className='btn-sm'
@@ -163,7 +163,7 @@ const Work = () => {
 
           <div className="card-description">
             <h3 className="h3-responsive" id='app-title'>Ecommerce-shopping website</h3>
-            <p id='app-para'>A responsive shopping website to browse and select. Build using ReactJS, with Redux as the state library and Semantics UI along with CSS styling</p>
+            <p id='app-para'>A responsive shopping website to browse and select. Build using ReactJS, with Redux as the state library and Semantics UI along with CSS styling.</p>
             <div className="button-containerimp">
             <Button
               variant="outline-light" className='btn-sm'
@@ -191,7 +191,7 @@ const Work = () => {
 
           <div className="card-description">
             <h3 className="h3-responsive" id='app-title'>HighwayAsia (Work Project)</h3>
-            <p id='app-para'>A blog website under the works using wordpress and styling the UI using custom CSS rules and other potential frameworks</p>
+            <p id='app-para'>A blog website under the works using wordpress and styling the UI using custom CSS rules and other potential frameworks.</p>
             <div className="button-containerimp">
             <Button
               variant="outline-light" className='btn-sm'
