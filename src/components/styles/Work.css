@@ -73,6 +73,9 @@
     .btn-sm{
         transform: scale(0.5);
     }
+    #carousel-images{
+        overflow-y: hidden;
+    }
     
 }
 

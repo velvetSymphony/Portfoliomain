@@ -36,7 +36,7 @@ const Home = () => {
           delay={3700}
           duration={1500}
         >
-          <p className="para1">My name is Abhishek and I'm an Aspiring Full-Stack Developer</p>
+          <p className="para1">My name is Abhishek and I'm an Aspiring FullStack Developer</p>
         </Zoom>
         <div className="link-wrap">
           <a

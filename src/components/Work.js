@@ -73,7 +73,7 @@ const Work = () => {
       >
         <div className="card">
           <div className="card-image">
-            <img src={Gameimage} alt="1" />
+            <img src={Gameimage} alt="Game" id='carousel-images' />
           </div>
           <div className="card-description">
             <h3 className="h3-responsive" id='app-title'>Game-browsing App</h3>
@@ -101,7 +101,7 @@ const Work = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src={Weatherimage} alt="1" />
+            <img src={Weatherimage} alt="Weather" id='carousel-images' />
           </div>
 
           <div className="card-description">
@@ -130,7 +130,7 @@ const Work = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src={Jscalcimage} alt="1" />
+            <img src={Jscalcimage} alt="Jscalc" id='carousel-images' />
           </div>
 
           <div className="card-description">
@@ -158,7 +158,7 @@ const Work = () => {
         </div>
         <div className="card">
           <div className="card-image">
-            <img src={Ecommersiteimage} alt="1" />
+            <img src={Ecommersiteimage} alt="Ecommerce" id='carousel-images' />
           </div>
 
           <div className="card-description">
@@ -186,7 +186,7 @@ const Work = () => {
         </div>
         <div className="card">
           <div className="card-image">
-            <img src={HighwayAsiaimage} alt="1" />
+            <img src={HighwayAsiaimage} alt="HighwayAsia" id='carousel-images' />
           </div>
 
           <div className="card-description">
