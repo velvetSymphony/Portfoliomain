@@ -12,6 +12,9 @@
     overflow-y: hidden;
 
 }
+.About>span{
+    font-size: 2rem;
+}
 
 .outline1 {
     width: 80%;
