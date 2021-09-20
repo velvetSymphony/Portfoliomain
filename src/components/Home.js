@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home-background">
       <div className="space-top">
-        <Zoom
+        <Fade
           right
           opposite
           cascade
@@ -17,9 +17,9 @@ const Home = () => {
           duration={900}
         >
           <h1 className="head1">Hello there!</h1>
-          </Zoom>
-          <Zoom
-          right
+          </Fade>
+          <Fade
+          left
           opposite
           cascade
           triggerOnce={true}
@@ -27,7 +27,7 @@ const Home = () => {
           duration={900}
         >
           <h3 className="head3">Welcome to my portfolio</h3>
-          </Zoom>
+          </Fade>
           <Zoom
           left
           opposite

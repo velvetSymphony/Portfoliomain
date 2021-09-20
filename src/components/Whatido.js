@@ -12,7 +12,7 @@ const Whatido = () => {
       <div className="outline2"></div>
       <ul className="items">
         
-        <Fade left cascade triggerOnce={true} duration={1800}>
+        <Fade left  triggerOnce={true} duration={1800}>
           <li className="item-1">
             <div className="icon-style">
               <img src={Image} alt="paintbrush" id="image-center"></img>
