@@ -111,7 +111,7 @@ const Work = () => {
             <Button
               variant="outline-light" className='btn-sm'
               onClick={(e) => {
-                sendit5();
+                sendit3();
               }}
             >
               View Website
@@ -119,7 +119,7 @@ const Work = () => {
             <Button
               variant="outline-light" className='btn-sm'
               onClick={(e) => {
-                sendit6();
+                sendit4();
               }}
             >
               View Repo
@@ -140,7 +140,7 @@ const Work = () => {
             <Button
               variant="outline-light" className='btn-sm'
               onClick={(e) => {
-                sendit3();
+                sendit7();
               }}
             >
               View Website
@@ -148,7 +148,7 @@ const Work = () => {
             <Button
               variant="outline-light" className='btn-sm'
               onClick={(e) => {
-                sendit4();
+                sendit8();
               }}
             >
               View Repo
@@ -168,7 +168,7 @@ const Work = () => {
             <Button
               variant="outline-light" className='btn-sm'
               onClick={(e) => {
-                sendit7();
+                sendit5();
               }}
             >
               View Website
@@ -176,7 +176,7 @@ const Work = () => {
             <Button
               variant="outline-light" className='btn-sm'
               onClick={(e) => {
-                sendit8();
+                sendit6();
               }}
             >
               View Repo
