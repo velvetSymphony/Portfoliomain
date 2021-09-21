@@ -68,7 +68,7 @@ const Mobilemenu = () => {
         duration={200}
         onClick = {()=>menuclose()}
       >
-        <p>Contacts</p>
+        <p>Contact</p>
       </Link>
  <div className="link-style">
       <a className="Links" href="https://github.com/Abhishekcs96">

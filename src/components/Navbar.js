@@ -44,7 +44,7 @@ const Navbar = () => {
           offset={-180}
           duration={200}
         >
-          <p id="Contacts-bar">Contacts</p>
+          <p id="Contacts-bar">Contact</p>
         </Link>
       </div>
     </Fade>
