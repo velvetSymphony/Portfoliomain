@@ -1,6 +1,10 @@
 This website was created using ReactJS and other React-libraries. Styled using CSS and bootstrap.
 Displays my portfolio.
 
+Additional work to do -
+Improve accessibility features and icons.
+improve responsiveness.
+
 
 # Getting Started with Create React App
 
