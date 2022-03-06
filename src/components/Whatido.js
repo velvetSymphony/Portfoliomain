@@ -8,7 +8,7 @@ import Image2 from "./images/Rocket.png";
 const Whatido = () => {
   return (
     <div className="Main-container">
-      <h3 className="whatdo">My Project Approach</h3>
+      <h3 className="whatdo">My Certifications</h3>
       <div className="outline2"></div>
       <ul className="items">
         

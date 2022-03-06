@@ -16,7 +16,7 @@ const Home = () => {
           delay={500}
           duration={900}
         >
-          <h1 className="head1">Hello there!</h1>
+          <h1 className="head1">Hey there!</h1>
           </Fade>
           <Fade
           left
@@ -26,7 +26,7 @@ const Home = () => {
           delay={2500}
           duration={900}
         >
-          <h3 className="head3">Welcome to my portfolio</h3>
+          <h3 className="head3">My name is Abhishek</h3>
           </Fade>
           <Zoom
           left
@@ -36,7 +36,7 @@ const Home = () => {
           delay={3700}
           duration={1500}
         >
-          <p className="para1">I'm an Aspiring FullStack Developer</p>
+          <p className="para1">Welcome to my portfolio</p>
         </Zoom>
         <div className="link-wrap">
           <a
