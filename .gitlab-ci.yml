@@ -3,8 +3,8 @@
 # Pipeline stages go as Commit --> Build --> test (file check) --> Deploy.
 
 stages:
-    build
-    test
+    - build
+    - test
 
 build website:
     stage: build
