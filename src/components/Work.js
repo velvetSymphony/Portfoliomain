@@ -11,6 +11,7 @@ import Jscalcimage from "./images/jscalcwebsite.PNG";
 import Weatherimage from "./images/Weathersite.PNG";
 import HighwayAsiaimage from './images/HighwayAsia.PNG';
 
+
 const Work = () => {
   const resp = {
     responsive: {
