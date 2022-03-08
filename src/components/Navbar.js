@@ -6,12 +6,12 @@ import "./styles/Navbar.css";
 const Navbar = () => {
   return (
     <Fade duration={2000} delay={5000} triggerOnce={true}>
-      <div className="navbar-container" id ='scrollfixing'>
+      <div className="navbar-container" id="scrollfixing">
         <Link
           className="navlinks"
           activeClass="active"
           to="About"
-          id='link0imp'
+          id="link0imp"
           spy={true}
           smooth={true}
           hashSpy={true}
@@ -23,7 +23,20 @@ const Navbar = () => {
         <Link
           className="navlinks"
           activeClass="active"
-          id='link1imp'
+          to="Certifications"
+          id="link3imp"
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={-180}
+          duration={200}
+        >
+          <p id="Contacts-bar">Certifications</p>
+        </Link>
+        <Link
+          className="navlinks"
+          activeClass="active"
+          id="link1imp"
           to="Portfolio"
           spy={true}
           smooth={true}
@@ -31,13 +44,13 @@ const Navbar = () => {
           offset={-160}
           duration={200}
         >
-          <p id="Portfolio-bar">Portfolio</p>
+          <p id="Portfolio-bar">Projects</p>
         </Link>
         <Link
           className="navlinks"
           activeClass="active"
           to="Contacts"
-          id='link2imp'
+          id="link2imp"
           spy={true}
           smooth={true}
           hashSpy={true}

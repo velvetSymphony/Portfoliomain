@@ -6,11 +6,10 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./styles/Work.css";
 import Gameimage from "./images/gamesite.PNG";
-import Ecommersiteimage from './images/ecommercesite.PNG';
+import Ecommersiteimage from "./images/ecommercesite.PNG";
 import Jscalcimage from "./images/jscalcwebsite.PNG";
 import Weatherimage from "./images/Weathersite.PNG";
-import HighwayAsiaimage from './images/HighwayAsia.PNG';
-
+import HighwayAsiaimage from "./images/HighwayAsia.PNG";
 
 const Work = () => {
   const resp = {
@@ -30,36 +29,35 @@ const Work = () => {
       },
     },
   };
-//funtions to open new websites  
+  //functions to open new websites
   const sendit = (e) => {
-    window.open("https://gameslist.netlify.app",  '_blank');
+    window.open("https://gameslist.netlify.app", "_blank");
   };
   const sendit2 = (e) => {
-    window.open("https://github.com/Abhishekcs96/Games",  '_blank');
-  }
+    window.open("https://github.com/Abhishekcs96/Games", "_blank");
+  };
   const sendit3 = (e) => {
-    window.open("https://acs-weatherapp.netlify.app",  '_blank');
-  }
+    window.open("https://acs-weatherapp.netlify.app", "_blank");
+  };
   const sendit4 = (e) => {
-    window.open("https://github.com/Abhishekcs96/weather",  '_blank');
-  }
+    window.open("https://github.com/Abhishekcs96/weather", "_blank");
+  };
   const sendit5 = (e) => {
-    window.open("https://acs-ecommerceshop.netlify.app",  '_blank');
-  }
+    window.open("https://acs-ecommerceshop.netlify.app", "_blank");
+  };
   const sendit6 = (e) => {
-    window.open("https://github.com/Abhishekcs96/Ecommerce-store",  '_blank');
-  }
+    window.open("https://github.com/Abhishekcs96/Ecommerce-store", "_blank");
+  };
   const sendit7 = (e) => {
-    window.open("https://abhishekcs96.github.io/jscalc/",  '_blank');
-  }
+    window.open("https://abhishekcs96.github.io/jscalc/", "_blank");
+  };
   const sendit8 = (e) => {
-    window.open("https://github.com/Abhishekcs96/jscalc",  '_blank');
-  }
+    window.open("https://github.com/Abhishekcs96/jscalc", "_blank");
+  };
   const sendit9 = (e) => {
-    window.open("https://highwayasia.com/",  '_blank');
-  }
+    window.open("https://highwayasia.com/", "_blank");
+  };
   return (
-    
     <div className="carousel-info">
       <ReactOwlCarousel
         className="owl-theme"
@@ -74,134 +72,177 @@ const Work = () => {
       >
         <div className="card">
           <div className="card-image">
-            <img src={Gameimage} alt="Game" id='carousel-images' />
+            <img src={Gameimage} alt="Game" id="carousel-images" />
           </div>
           <div className="card-description">
-            <h3 className="h3-responsive" id='app-title'>Game-browsing App</h3>
-            <p id='app-para'>Interactive and responsive game-browsing list with sort and search functionality. Built using ReactJS, with Redux as the state library and Material UI along with CSS for styling.</p>
+            <h3 className="h3-responsive" id="app-title">
+              Game-browsing App
+            </h3>
+            <p id="app-para">
+              Interactive and responsive game-browsing list with sort and search
+              functionality. Built using ReactJS, with Redux as the state
+              library and Material UI along with CSS for styling.
+            </p>
             <div className="button-containerimp">
-            <Button
-              variant="outline-light" id="buttonimp" className='btn-sm'
-              onClick={(e) => {
-                sendit();
-              }}
-            >
-              View Website
-            </Button>
-            <Button
-              variant="outline-light" id="buttonimp" className='btn-sm'
-              onClick={(e) => {
-                sendit2();
-              }}
-            >
-              View Repo
-            </Button>
+              <Button
+                variant="outline-light"
+                id="buttonimp"
+                className="btn-sm"
+                onClick={(e) => {
+                  sendit();
+                }}
+              >
+                View Website
+              </Button>
+              <Button
+                variant="outline-light"
+                id="buttonimp"
+                className="btn-sm"
+                onClick={(e) => {
+                  sendit2();
+                }}
+              >
+                View Repo
+              </Button>
             </div>
           </div>
         </div>
 
         <div className="card">
           <div className="card-image">
-            <img src={Weatherimage} alt="Weather" id='carousel-images' />
+            <img src={Weatherimage} alt="Weather" id="carousel-images" />
           </div>
 
           <div className="card-description">
-            <h3 className="h3-responsive" id='app-title'>Weather-Application</h3>
-            <p id='app-para'>A responsive weather application that displays weather data depending on your search query. Built using ReactJS and styled in SASS.</p>
+            <h3 className="h3-responsive" id="app-title">
+              Weather-Application
+            </h3>
+            <p id="app-para">
+              A responsive weather application that displays weather data
+              depending on your search query. Built using ReactJS and styled in
+              SASS.
+            </p>
             <div className="button-containerimp">
-            <Button
-              variant="outline-light" className='btn-sm'
-              onClick={(e) => {
-                sendit3();
-              }}
-            >
-              View Website
-            </Button>
-            <Button
-              variant="outline-light" className='btn-sm'
-              onClick={(e) => {
-                sendit4();
-              }}
-            >
-              View Repo
-            </Button>
+              <Button
+                variant="outline-light"
+                className="btn-sm"
+                onClick={(e) => {
+                  sendit3();
+                }}
+              >
+                View Website
+              </Button>
+              <Button
+                variant="outline-light"
+                className="btn-sm"
+                onClick={(e) => {
+                  sendit4();
+                }}
+              >
+                View Repo
+              </Button>
             </div>
           </div>
         </div>
 
         <div className="card">
           <div className="card-image">
-            <img src={Jscalcimage} alt="Jscalc" id='carousel-images' />
+            <img src={Jscalcimage} alt="Jscalc" id="carousel-images" />
           </div>
 
           <div className="card-description">
-            <h3 className="h3-responsive" id='app-title'>JavaScript-Calculator</h3>
-            <p id='app-para'>An interactive calculator with basic functionality. Built with Vanilla JavaScript and styled using vanilla CSS.</p>
+            <h3 className="h3-responsive" id="app-title">
+              JavaScript-Calculator
+            </h3>
+            <p id="app-para">
+              An interactive calculator with basic functionality. Built with
+              Vanilla JavaScript and styled using vanilla CSS.
+            </p>
             <div className="button-containerimp">
-            <Button
-              variant="outline-light" className='btn-sm'
-              onClick={(e) => {
-                sendit7();
-              }}
-            >
-              View Website
-            </Button>
-            <Button
-              variant="outline-light" className='btn-sm'
-              onClick={(e) => {
-                sendit8();
-              }}
-            >
-              View Repo
-            </Button>
+              <Button
+                variant="outline-light"
+                className="btn-sm"
+                onClick={(e) => {
+                  sendit7();
+                }}
+              >
+                View Website
+              </Button>
+              <Button
+                variant="outline-light"
+                className="btn-sm"
+                onClick={(e) => {
+                  sendit8();
+                }}
+              >
+                View Repo
+              </Button>
             </div>
           </div>
         </div>
         <div className="card">
           <div className="card-image">
-            <img src={Ecommersiteimage} alt="Ecommerce" id='carousel-images' />
+            <img src={Ecommersiteimage} alt="Ecommerce" id="carousel-images" />
           </div>
 
           <div className="card-description">
-            <h3 className="h3-responsive" id='app-title'>Ecommerce-shopping website</h3>
-            <p id='app-para'>A responsive shopping website to browse and select. Build using ReactJS, with Redux as the state library and Semantics UI along with CSS styling.</p>
+            <h3 className="h3-responsive" id="app-title">
+              Ecommerce-shopping website
+            </h3>
+            <p id="app-para">
+              A responsive shopping website to browse and select. Build using
+              ReactJS, with Redux as the state library and Semantics UI along
+              with CSS styling.
+            </p>
             <div className="button-containerimp">
-            <Button
-              variant="outline-light" className='btn-sm'
-              onClick={(e) => {
-                sendit5();
-              }}
-            >
-              View Website
-            </Button>
-            <Button
-              variant="outline-light" className='btn-sm'
-              onClick={(e) => {
-                sendit6();
-              }}
-            >
-              View Repo
-            </Button>
+              <Button
+                variant="outline-light"
+                className="btn-sm"
+                onClick={(e) => {
+                  sendit5();
+                }}
+              >
+                View Website
+              </Button>
+              <Button
+                variant="outline-light"
+                className="btn-sm"
+                onClick={(e) => {
+                  sendit6();
+                }}
+              >
+                View Repo
+              </Button>
             </div>
           </div>
         </div>
         <div className="card">
           <div className="card-image">
-            <img src={HighwayAsiaimage} alt="HighwayAsia" id='carousel-images' />
+            <img
+              src={HighwayAsiaimage}
+              alt="HighwayAsia"
+              id="carousel-images"
+            />
           </div>
 
           <div className="card-description">
-            <h3 className="h3-responsive" id='app-title'>HighwayAsia (Work Project)</h3>
-            <p id='app-para'>A blog website under the works using wordpress and styling the UI using custom CSS rules and other potential frameworks.</p>
+            <h3 className="h3-responsive" id="app-title">
+              HighwayAsia (Work Project)
+            </h3>
+            <p id="app-para">
+              A blog website under the works using wordpress and styling the UI
+              using custom CSS rules and other potential frameworks.
+            </p>
             <div className="button-containerimp">
-            <Button
-              variant="outline-light" className='btn-sm'
-              onClick={(e) => {
-                sendit9();
-              }}
-            >
-              View Website (under the works)
-            </Button>
+              <Button
+                variant="outline-light"
+                className="btn-sm"
+                onClick={(e) => {
+                  sendit9();
+                }}
+              >
+                View Website (under the works)
+              </Button>
             </div>
           </div>
         </div>

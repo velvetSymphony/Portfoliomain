@@ -7,7 +7,7 @@ import Cert1 from "./images/CERTIFICATE_LANDING_PAGE_GLLCYQLF8SR4.jpg";
 
 const Whatido = () => {
   return (
-    <div className="Main-container">
+    <div className="Main-container" id="Certifications">
       <h3 className="whatdo">My Certifications</h3>
       <div className="outline2"></div>
       <ul className="items">
@@ -62,8 +62,8 @@ const Whatido = () => {
             </div>
           </li>
 
-          <li className="item-1">
-          <div className="icon-title1">Certificates</div>
+          <li className="item-4">
+          <div className="icon-title1">Web Dev Certificates</div>
           <div className="outline2"></div>
             <div className="icon-style1">
               <img
