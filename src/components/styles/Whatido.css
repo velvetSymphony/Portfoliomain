@@ -38,11 +38,18 @@
 
 .icon-style {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    justify-items: left;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+}
+
+.icon-style1{
+    display: flex;
+    justify-content: left; 
+    align-items: center;
 }
 
 .css-1ie873t {
@@ -73,8 +80,21 @@
     padding-bottom: 1%;
 }
 
+.icon-title1{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    
+}
+
 .icon-text {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 1%;
+}
+.icon-text1{
+    font-size: 0.7rem;
     width: 100%;
     text-align: justify;
     padding-bottom: 1%;
@@ -87,10 +107,24 @@
     }
     .icon-text{
         font-size: 14px;
+        text-align: center;
+
+    }
+    .icon-text1{
+        text-align: left;
+        font-size: 14px;
     }
     .icon-title{
         font-size: 0.8rem;
     }
+    .icon-title1{
+        font-size: 1rem;
+        padding-bottom: 1%;
+    }
+    .icon-style1{
+        margin-top: 2%;
+    }
+    
     .icon-style>img {
        
         transform: scale(0.55);
@@ -103,7 +137,7 @@
         overflow-y: hidden;
     }
     .icon-text{
-        font-size: 17px;
+        font-size: 19px;
     }
     .icon-title{
         font-size: 1.2rem;

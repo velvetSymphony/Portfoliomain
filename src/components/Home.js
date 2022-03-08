@@ -17,8 +17,8 @@ const Home = () => {
           duration={900}
         >
           <h1 className="head1">Hey there!</h1>
-          </Fade>
-          <Fade
+        </Fade>
+        <Fade
           left
           opposite
           cascade
@@ -27,8 +27,8 @@ const Home = () => {
           duration={900}
         >
           <h3 className="head3">My name is Abhishek</h3>
-          </Fade>
-          <Zoom
+        </Fade>
+        <Zoom
           left
           opposite
           cascade
