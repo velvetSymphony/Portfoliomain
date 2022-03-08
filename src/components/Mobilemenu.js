@@ -47,6 +47,19 @@ const Mobilemenu = () => {
       <Link
         className="navlinks"
         activeClass="active"
+        to="Certifications"
+        spy={true}
+        smooth={true}
+        hashSpy={true}
+        offset={0}
+        duration={200}
+        onClick = {()=>menuclose()}
+      >
+        <p>Certifications</p>
+      </Link>
+      <Link
+        className="navlinks"
+        activeClass="active"
         to="Portfolio"
         spy={true}
         smooth={true}
@@ -55,7 +68,7 @@ const Mobilemenu = () => {
         duration={200}
         onClick = {()=>menuclose()}
       >
-        <p>Portfolio</p>
+        <p>Projects</p>
       </Link>
           <Link
         className="navlinks"

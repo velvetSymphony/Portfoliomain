@@ -42,6 +42,9 @@ a:hover{
 .item-3{
     overflow: hidden;
 }
+.item-4{
+    margin-top: 15%;
+}
 
 .icon-style {
     display: flex;
@@ -116,7 +119,7 @@ a:hover{
     }
     .icon-text{
         font-size: 14px;
-        text-align: center;
+        text-align: left;
 
     }
     .icon-text1{
@@ -125,6 +128,7 @@ a:hover{
     }
     .icon-title{
         font-size: 0.8rem;
+        text-align: start;
     }
     .icon-title1{
         font-size: 1rem;
@@ -132,6 +136,7 @@ a:hover{
     }
     .icon-style1{
         margin-top: 2%;
+        width:fit-content;
     }
     
     .icon-style>img {

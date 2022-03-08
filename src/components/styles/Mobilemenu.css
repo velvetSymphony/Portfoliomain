@@ -13,7 +13,7 @@
   display: none;
 }
 
-
+/* using help from react-burger menu package to style components */
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #373a47;
