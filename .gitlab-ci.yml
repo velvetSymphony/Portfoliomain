@@ -1,0 +1,32 @@
+# Creating Code pipeline by filling in build config.
+# Testing not really neccessary for our website but we'll do it anyway.
+# Pipeline stages go as Commit --> Build --> test (file check) --> Deploy.
+
+stages:
+    - build
+    - test
+
+build website:
+    stage: build
+    image: node:16-alpine          # Lightweight distro of node to run our build.
+    script:
+        - yarn install
+        - yarn build
+    artifacts:
+        paths:
+            - public
+
+test website:
+    stage: test
+    image: node:16-alpine         # Using same image to retain commands to use.
+    script:
+        - yarn global add serve    # Using global yarn serve command to use the serve dependency globally.
+        - apk add curl             # Gotta add curl apk dependancy(of Alpine. not yarn) to be able to use it.
+        - serve -s build &         # Start server using the build done.
+        - sleep 10                 # Initiate a wait time of 10s before server begins.
+        - curl http://localhost:3000 | grep "Portfolio" 
+# curl can go to the address, download the website.
+# You can then do anything with it, in this case we use the grep command to find a string in this website.
+
+        
+
