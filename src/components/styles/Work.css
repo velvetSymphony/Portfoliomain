@@ -1,9 +1,3 @@
-.owl-carousel {
-    display: block;
-    background: linear-gradient(135deg, #272223f1, #272223f1 50%, #b83a5a 75%, #b83a5a 75%);
-    background-repeat: no-repeat;
-    width: 100%;
-}
 
 .card {
     text-align: center;
@@ -45,9 +39,8 @@
     margin-bottom: 2%;
 }
 
-.owl-dots{
-    margin-top: 0px !important;
-}
+
+
 
 @media all and (min-width:320px) and (max-width:580px) {
     .owl-stage{
