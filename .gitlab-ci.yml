@@ -1,0 +1,16 @@
+stages:
+    - build
+    - test
+
+Build Website:
+    - stage: build
+    - image: node-alpine:latest
+    - script:
+        - npm ci
+        - npm run build
+
+Test Website:
+    - stage: test
+    - image: node-alpine:latest
+    - script: 
+        - npm test
