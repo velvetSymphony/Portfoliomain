@@ -1,7 +1,7 @@
 stages:
-  .pre
-  build
-  test
+  - .pre
+  - build
+  - test
 
 Build Website:
   stage: build
