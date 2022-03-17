@@ -14,7 +14,7 @@ const Mobilemenu = () => {
     setMenu(!menu);
   };
 
-  const menuclose = (e) => {
+  const menuclose = () => {
     setMenu(false);
   };
   const handlestatechange = (state) => {

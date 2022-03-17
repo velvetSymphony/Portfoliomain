@@ -10,13 +10,23 @@ import Mobilemenu from "./components/Mobilemenu";
 
 function App() {
   return (
+    
+    
+    // eslint-disable-next-line react/react-in-jsx-scope
     <div className="App">
+       {/*eslint-disable-next-line react/react-in-jsx-scope */}
       <Header />
+      {/*eslint-disable-next-line react/react-in-jsx-scope */}
       <Mobilemenu />
+      {/*eslint-disable-next-line react/react-in-jsx-scope */}
       <Home />
+      {/*eslint-disable-next-line react/react-in-jsx-scope */}
       <About />
+      {/*eslint-disable-next-line react/react-in-jsx-scope */}
       <Whatido />
+      {/*eslint-disable-next-line react/react-in-jsx-scope */}
       <CarouselPortfolio />
+      {/*eslint-disable-next-line react/react-in-jsx-scope */}
       <Contact />
     </div>
   );

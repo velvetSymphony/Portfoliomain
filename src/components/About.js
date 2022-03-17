@@ -25,7 +25,7 @@ const About = () => {
           </h5>
           <h5 id="degree">A little bit about myself</h5>
           <p id="me-info">
-            I'm a Master's graduate from the University of New South Wales,
+            I&apos;m a Master&apos;s graduate from the University of New South Wales,
             Australia. A bit after graduation, I became interested in learning
             more about coding and front end dev technologies such as reactJS to
             broaden my horizons. Took my learning through the hands on route,
@@ -82,15 +82,15 @@ const About = () => {
         </div>
         <div className="info-container">
           <p id="me-info">
-            I have a good foundational network background through my master's
-            studies and clearing my CCNA. Projects during my master's were
+            I have a good foundational network background through my master&apos;s
+            studies and clearing my CCNA. Projects during my master&apos;s were
             implemented using python and afterwards, I learnt javascript out of
             interest. All my self-implemented projects were made using
             javascript and react. I have worked on a basic level with Linux via
-            oracle virtualbox (mainly using Ubuntu). I'm familiar with version
+            oracle virtualbox (mainly using Ubuntu). I&apos;m familiar with version
             control tools such as Git, experimented with Docker and use Gitlab
             as my primary tool for CI and CD. I have a strong footing in AWS,
-            having used it's services for hands-on lab practices and demos to
+            having used it&apos;s services for hands-on lab practices and demos to
             prepare for my exam. I am currently learning to implement
             Infrastructure as code (IaC) through AWS (and possibly terraform) to
             better my understanding of cloud and devops tools and deploy my

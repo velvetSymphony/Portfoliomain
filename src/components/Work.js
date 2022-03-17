@@ -10,28 +10,28 @@ import Weatherimage from "./images/Weathersite.PNG";
 
 const Work = () => {
   //functions to open new websites
-  const sendit = (e) => {
+  const sendit = () => {
     window.open("https://gameslist.netlify.app", "_blank");
   };
-  const sendit2 = (e) => {
+  const sendit2 = () => {
     window.open("https://github.com/Abhishekcs96/Games", "_blank");
   };
-  const sendit3 = (e) => {
+  const sendit3 = () => {
     window.open("https://acs-weatherapp.netlify.app", "_blank");
   };
-  const sendit4 = (e) => {
+  const sendit4 = () => {
     window.open("https://github.com/Abhishekcs96/weather", "_blank");
   };
-  const sendit5 = (e) => {
+  const sendit5 = () => {
     window.open("https://acs-ecommerceshop.netlify.app", "_blank");
   };
-  const sendit6 = (e) => {
+  const sendit6 = () => {
     window.open("https://github.com/Abhishekcs96/Ecommerce-store", "_blank");
   };
-  const sendit7 = (e) => {
+  const sendit7 = () => {
     window.open("https://abhishekcs96.github.io/jscalc/", "_blank");
   };
-  const sendit8 = (e) => {
+  const sendit8 = () => {
     window.open("https://github.com/Abhishekcs96/jscalc", "_blank");
   };
   return (
@@ -60,7 +60,7 @@ const Work = () => {
                   variant="outline-light"
                   id="buttonimp"
                   className="btn-sm"
-                  onClick={(e) => {
+                  onClick={() => {
                     sendit();
                   }}
                 >
@@ -70,7 +70,7 @@ const Work = () => {
                   variant="outline-light"
                   id="buttonimp"
                   className="btn-sm"
-                  onClick={(e) => {
+                  onClick={() => {
                     sendit2();
                   }}
                 >
@@ -103,7 +103,7 @@ const Work = () => {
                 <Button
                   variant="outline-light"
                   className="btn-sm"
-                  onClick={(e) => {
+                  onClick={() => {
                     sendit3();
                   }}
                 >
@@ -112,7 +112,7 @@ const Work = () => {
                 <Button
                   variant="outline-light"
                   className="btn-sm"
-                  onClick={(e) => {
+                  onClick={() => {
                     sendit4();
                   }}
                 >
@@ -145,7 +145,7 @@ const Work = () => {
                 <Button
                   variant="outline-light"
                   className="btn-sm"
-                  onClick={(e) => {
+                  onClick={() => {
                     sendit7();
                   }}
                 >
@@ -154,7 +154,7 @@ const Work = () => {
                 <Button
                   variant="outline-light"
                   className="btn-sm"
-                  onClick={(e) => {
+                  onClick={() => {
                     sendit8();
                   }}
                 >
@@ -186,7 +186,7 @@ const Work = () => {
                 <Button
                   variant="outline-light"
                   className="btn-sm"
-                  onClick={(e) => {
+                  onClick={() => {
                     sendit5();
                   }}
                 >
@@ -195,7 +195,7 @@ const Work = () => {
                 <Button
                   variant="outline-light"
                   className="btn-sm"
-                  onClick={(e) => {
+                  onClick={() => {
                     sendit6();
                   }}
                 >

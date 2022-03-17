@@ -28,7 +28,7 @@ const Contact = () => {
           <Button className ='button-submit' variant="outline-light" type="submit" >Submit</Button>
         </div>
         <div className="text-container">
-          <h5 className="header-five">Alternatively (if the above isn't working yet)</h5>
+          <h5 className="header-five">Alternatively (if the above isn&apos;t working yet)</h5>
           <p className ="contact-para">Please contact me at</p>
           <p className ="contact-para">abhishekcs96@gmail.com</p>
         </div>
