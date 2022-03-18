@@ -16,7 +16,7 @@ const Home = () => {
           delay={500}
           duration={900}
         >
-          <h1 className="head1">Hey there!</h1>
+          <h1 className="head1">Hello there!</h1>
         </Fade>
         <Fade
           left
