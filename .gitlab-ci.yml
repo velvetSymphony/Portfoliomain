@@ -2,6 +2,10 @@ stages:
   - build
   - test
   - deploy
+  - post deploy
+
+variables:
+  APP_URL: http://terraform-20220318033334413900000001.s3-website-ap-southeast-2.amazonaws.com
 
 Build Website:
   stage: build
@@ -33,3 +37,11 @@ Deploy to s3:
     - echo $CI_COMMIT_REF_NAME
     - echo $CI_DEFAULT_BRANCH
     - aws s3 sync build s3://$AWS_S3_BUCKET --delete
+
+production tests:
+  stage: post deploy
+  image: curlimages/curl
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  script:
+    - curl $APP_URL 
