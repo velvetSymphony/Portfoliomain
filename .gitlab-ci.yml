@@ -24,6 +24,6 @@ Building Docker Image:
   services: 
     - docker:20.10.13-dind
   script:
-    - docker build -t CI_REGISTRY_IMAGE -t $CI_REGISTRY_IMAGE:$APP_VERSION .       
+    - docker build -t $CI_REGISTRY_IMAGE -t $CI_REGISTRY_IMAGE:$APP_VERSION .       
     - docker image ls
 
