@@ -18,7 +18,7 @@ Build Website:
     - echo $APP_VERSION 
     - serve -s build &
     - sleep 15
-    - curl -v http://localhost:3000/version | grep $APP_VERSION
+    - curl -v -o version.html http://localhost:3000 | grep $APP_VERSION
 
 
 .Building Docker Image:
