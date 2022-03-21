@@ -35,7 +35,7 @@ Testing Docker Image:
   image: curlimages/curl
   services:
     - name: $CI_REGISTRY_IMAGE:$APP_VERSION
-    - alias: versioncheck
+      alias: versioncheck
   script:
     - curl http://versioncheck/version.html | grep $APP_VERSION
 
