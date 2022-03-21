@@ -16,7 +16,7 @@ Build Website:
     - npm i -g serve
     - echo $APP_VERSION > build/version.html
     - serve -s build &
-    - sleep 60
+    - sleep 30
     - curl -v http://localhost:3000 | grep "Portfolio"
 
 
