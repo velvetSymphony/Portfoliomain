@@ -16,8 +16,8 @@ Build Website:
     - npm i -g serve
     - echo $APP_VERSION > build/version.html
     - serve -s build &
-    - sleep 10
-    - curl http://localhost:3000
+    - sleep 60
+    - curl -v http://localhost:3000
 
 
 .Building Docker Image:
