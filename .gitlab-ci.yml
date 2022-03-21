@@ -1,7 +1,9 @@
 stages:
   - build
-  - test
-  - deploy
+  - packaging
+
+variables:
+  APP_VERSION: $CI_PIPELINE_IID
 
 Build Website:
   stage: build
@@ -11,25 +13,17 @@ Build Website:
     - npm run lint
     - npm test
     - npm run build
+    - echo $APP_VERSION > build/version.html
   artifacts:
     paths:
       - build
 
-Test Website:
-  stage: test
-  image: alpine
+Building Docker Image:
+  stage: packaging
+  image: docker:20.10.13
+  services: 
+    - docker:20.10.13-dind
   script:
-    - test -f build/index.html 
+    - docker build -t CI_REGISTRY_IMAGE -t $CI_REGISTRY_IMAGE:$APP_VERSION .       
+    - docker image ls
 
-Deploy to s3:
-  stage: deploy
-  image: 
-    name: amazon/aws-cli
-    entrypoint: [""]
-  rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-  script:
-    - aws --version
-    - echo $CI_COMMIT_REF_NAME
-    - echo $CI_DEFAULT_BRANCH
-    - aws s3 sync build s3://$AWS_S3_BUCKET --delete
