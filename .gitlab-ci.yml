@@ -15,9 +15,10 @@ Build Website:
     - npm run build
     - npm i -g serve
     - echo $APP_VERSION > build/version.html
+    - echo $APP_VERSION 
     - serve -s build &
     - sleep 15
-    - curl -v http://localhost:3000/version.html | grep $APP_VERSION
+    - curl -v http://localhost:3000 | grep $APP_VERSION
 
 
 .Building Docker Image:
