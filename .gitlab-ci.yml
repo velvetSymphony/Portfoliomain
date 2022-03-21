@@ -16,9 +16,9 @@ Build Website:
     - npm i -g serve
     - echo $APP_VERSION > build/version.html
     - echo $APP_VERSION 
-    - serve -s build &
-    - sleep 15
-    - curl -v -o version.html http://localhost:3000 | grep $APP_VERSION
+  artifacts:
+    paths:
+      - build
 
 
 .Building Docker Image:
