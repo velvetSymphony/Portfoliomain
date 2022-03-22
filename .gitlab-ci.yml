@@ -50,6 +50,6 @@ Deploy to EC2:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
   script: 
-    - ssh -o StrictHostKeyChecking=no ec2-user@ec2-3-104-202-211.ap-southeast-2.compute.amazonaws.com "docker stop Visvesvaraya; docker image prune -f; docker pull registry.gitlab.com/abhishekcs96/portfoliomain:latest; docker run --rm --name Visvesvaraya -d -p 80:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest; echo "Alles ist gut"; exit"
+    - ssh -o StrictHostKeyChecking=no ec2-user@ec2-3-104-202-211.ap-southeast-2.compute.amazonaws.com "docker stop Visvesvaraya; docker pull registry.gitlab.com/abhishekcs96/portfoliomain:latest; docker run --rm --name Visvesvaraya -d -p 80:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest; docker system prune -f; exit"
 
 
