@@ -2,42 +2,61 @@ stages:
   - build
   - packaging
   - testing
+  - deploy
 
 variables:
-  APP_VERSION: $CI_PIPELINE_IID
+  APP_VERSION: $CI_PIPELINE_IID     # using the pipeline predefined variable to define an app version to simplify checking and tagging of images, just a form of checking atleast.
 
+ #Build and tests over here
 Build Website:
   stage: build
   image: node:16-alpine
   script:
-    - apk add curl
     - npm ci
-    - npm run lint
-    - npm test
+    - npm run lint      # enabled a lint test just to check syntax errors in code.
+    - npm test          # running app.test.js test with the jest testsuite already installed.
     - npm run build
-    - echo $APP_VERSION > build/version.html
-    - curl http://localhost:3000
+    - echo $APP_VERSION > build/version.html       # app version input into version.html   
   artifacts:
     paths:
       - build
 
-.Building Docker Image:
+Building Docker Image:
   stage: packaging
-  image: docker:20.10.13
-  services: 
-    - docker:20.10.13-dind
+  image: docker:20.10.13            # Here we need to execute docker commands to package and build our image, therefore docker image is used.
+  services:                        # kinda like docker inception.
+    - docker:20.10.13-dind          # services are required to make docker daemon available for the docker image running inside our docker container.
   script:
-    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin
-    - docker build -t $CI_REGISTRY_IMAGE -t $CI_REGISTRY_IMAGE:$APP_VERSION .       
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin  # essentially authenticating our git credentials to use git registry from within the docker.
+    - docker build -t $CI_REGISTRY_IMAGE -t $CI_REGISTRY_IMAGE:$APP_VERSION .  # building 2 versions of the image with the same id, just for backups and checks.       
     - docker image ls
-    - docker push --all-tags $CI_REGISTRY_IMAGE 
+    - docker push --all-tags $CI_REGISTRY_IMAGE  #push all tags to gitlab registry 
 
-.Testing Docker Image:
+Testing Docker Image:                
   stage: testing
-  image: curlimages/curl
+  image: curlimages/curl        # just want to check that the website exists on the image we created 
   services:
-    - name: $CI_REGISTRY_IMAGE:$APP_VERSION
-      alias: versioncheck
+    - name: $CI_REGISTRY_IMAGE:$APP_VERSION  # use the image from the container registry as a service, since we cant run multiple images in one job.
+      alias: versioncheck  # we can use an alias for the above image to make it easier for us to curl it.
   script:
-    - curl -v http://versioncheck/version.html
+    - curl -v http://versioncheck/version.html | grep $APP_VERSION  # check for app version inside of the image in the version.html file, just a simple check.
+
+Deploy to EC2:
+  stage: deploy
+  image: alpine          # alpine is more than enough for our task
+  only:                 # deploy only when branch is master.
+    refs:
+      - master          
+  before_script:          # basically, execute these commands before the actual script to make sure everything is set up for the script to run successfully.
+    - apk add openssh-client             # To install ssh in alpine, as ssh is our way to deploy these changes.
+    - eval $(ssh-agent -s)               # ssh agent in order to verify our private ssh key
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -  # pass the private key and remove the '\r' as gitlab runners like to add it and pass it to the ssh agent
+    - mkdir -p ~/.ssh  # make a new directory .ssh
+    - chmod 700 ~/.ssh # change permissions to allow full access to root user and none to others (limited priviledges principle)
+    # a very long script below, basically once i ssh into the instance, i want to be able to run docker commands and automate the task of pulling and running the images on ec2.
+    # while also making sure that container instances are reduced to only one and images are cleaned up in the ec2 space, as we already have all of them saved in gitlab container registry.
+    # stricthostkeychecking=no is required in order for the terminal to not interrupt our script. It's not the most secure way, but it does the job.
+  script: 
+    - ssh -o StrictHostKeyChecking=no ec2-user@ec2-3-104-202-211.ap-southeast-2.compute.amazonaws.com "docker stop Visvesvaraya; docker pull registry.gitlab.com/abhishekcs96/portfoliomain:latest; docker run --rm --name Visvesvaraya -d -p 80:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest; docker system prune -f; exit"
+
 
