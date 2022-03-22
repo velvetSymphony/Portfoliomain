@@ -3,10 +3,7 @@ stages:
   - packaging
   - testing
   - deploy
-  - post deploy
-
-variables:
-  APP_URL: http://terraform-20220318033334413900000001.s3-website-ap-southeast-2.amazonaws.com
+  
 
 variables:
   APP_VERSION: $CI_PIPELINE_IID     # using the pipeline predefined variable to define an app version to simplify checking and tagging of images, just a form of checking atleast.
@@ -42,19 +39,6 @@ Testing Docker Image:
   services:
     - name: $CI_REGISTRY_IMAGE:$APP_VERSION  # use the image from the container registry as a service, since we cant run multiple images in one job.
       alias: versioncheck  # we can use an alias for the above image to make it easier for us to curl it.
-  script:
-    - aws --version
-    - echo $CI_COMMIT_REF_NAME
-    - echo $CI_DEFAULT_BRANCH
-    - aws s3 sync build s3://$AWS_S3_BUCKET --delete
-
-production tests:
-  stage: post deploy
-  image: curlimages/curl
-  rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-  script:
-    - curl $APP_URL 
     - curl -v http://versioncheck/version.html | grep $APP_VERSION  # check for app version inside of the image in the version.html file, just a simple check.
 
 Deploy to EC2:
