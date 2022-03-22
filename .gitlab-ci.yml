@@ -44,7 +44,7 @@ Testing Docker Image:
 Deploy to EC2:
   stage: deploy
   image: alpine          # alpine is more than enough for our task
-   only:                 # deploy only when branch is master.
+  only:                 # deploy only when branch is master.
     refs:
       - master          
   before_script:          # basically, execute these commands before the actual script to make sure everything is set up for the script to run successfully.
