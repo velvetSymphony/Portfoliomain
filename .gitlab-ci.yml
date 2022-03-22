@@ -55,7 +55,7 @@ Deploy to EC2:
     - chmod 700 ~/.ssh # change permissions to allow full access to root user and none to others (limited priviledges principle)
     # a very long script below, basically once i ssh into the instance, i want to be able to run docker commands and automate the task of pulling and running the images on ec2.
     # while also making sure that container instances are reduced to only one and images are cleaned up in the ec2 space, as we already have all of them saved in gitlab container registry.
-    # stricthostkeychecking=no is required in order for the terminal to not interrupt our script. It's not the most secure way, but it does the job.
+    # stricthostkeychecking=no is most definitely required in order for the terminal to not interrupt our script. It's not the most secure way, but it does the job.
   script: 
     - ssh -o StrictHostKeyChecking=no ec2-user@ec2-3-104-202-211.ap-southeast-2.compute.amazonaws.com "docker stop Visvesvaraya; docker pull registry.gitlab.com/abhishekcs96/portfoliomain:latest; docker run --rm --name Visvesvaraya -d -p 80:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest; docker system prune -f; exit"
 
