@@ -61,8 +61,8 @@ Deploy to EC2:
       "docker stop Visvesvaraya; 
       docker stop Brahmagupta;
       docker pull registry.gitlab.com/abhishekcs96/portfoliomain:latest; 
-      docker run --rm --name Visvesvaraya -d -p 80:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest;
-      docker run --rm --name Brahmagupta -d -p 81:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest;
+      docker run --rm --name Visvesvaraya -d -p 50000:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest;
+      docker run --rm --name Brahmagupta -d -p 50001:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest;
       docker system prune -f; 
       exit"
 
