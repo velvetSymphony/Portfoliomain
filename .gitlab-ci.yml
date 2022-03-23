@@ -57,6 +57,13 @@ Deploy to EC2:
     # while also making sure that container instances are reduced to only one and images are cleaned up in the ec2 space, as we already have all of them saved in gitlab container registry.
     # stricthostkeychecking=no is most definitely required in order for the terminal to not interrupt our script. It's not the most secure way, but it does the job.
   script: 
-    - ssh -o StrictHostKeyChecking=no ec2-user@ec2-3-104-202-211.ap-southeast-2.compute.amazonaws.com "docker stop Visvesvaraya; docker pull registry.gitlab.com/abhishekcs96/portfoliomain:latest; docker run --rm --name Visvesvaraya -d -p 80:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest; docker system prune -f; exit"
+    - ssh -o StrictHostKeyChecking=no ec2-user@ec2-3-104-202-211.ap-southeast-2.compute.amazonaws.com 
+      "docker stop Visvesvaraya; 
+      docker stop Brahmagupta;
+      docker pull registry.gitlab.com/abhishekcs96/portfoliomain:latest; 
+      docker run --rm --name Visvesvaraya -d -p 80:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest;
+      docker run --rm --name Brahmagupta -d -p 81:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest;
+      docker system prune -f; 
+      exit"
 
 
