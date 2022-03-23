@@ -55,7 +55,7 @@ const Whatido = () => {
                     rel="noreferrer"
                     style={{ textDecoration: "none" }}
                   >
-                    My AWS SAA certification.
+                    My AWS CSA-A certification.
                   </a>
                 
               </div>
