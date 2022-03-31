@@ -58,8 +58,7 @@ Deploy to EC2:
     # stricthostkeychecking=no is most definitely required in order for the terminal to not interrupt our script. It's not the most secure way, but it does the job.
   script: 
     - ssh -o StrictHostKeyChecking=no ec2-user@ec2-3-104-202-211.ap-southeast-2.compute.amazonaws.com 
-      "docker login;
-      docker stop Visvesvaraya; 
+      "docker stop Visvesvaraya; 
       docker stop Brahmagupta;
       docker pull registry.gitlab.com/abhishekcs96/portfoliomain:latest; 
       docker run --rm --name Visvesvaraya -d -p 50000:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest;
