@@ -36,7 +36,7 @@ const Work = () => {
   };
   return (
     <div className="carousel-info">
-      <Carousel>
+      <Carousel interval={null}>
         <Carousel.Item>
           <div className="card">
             <div className="card-image">
