@@ -32,7 +32,7 @@ Building Docker Image:
     - docker image ls
     - docker push --all-tags $CI_REGISTRY_IMAGE  #push all tags to gitlab registry 
 
-.Testing Docker Image:                
+Testing Docker Image:                
   stage: testing
   image: curlimages/curl        # just want to check that the website exists on the image we created 
   services:
