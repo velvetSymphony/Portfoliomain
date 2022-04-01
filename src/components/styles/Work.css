@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0;
+    background-color: transparent !important;
 }
 
 
@@ -22,15 +23,18 @@
 }
 
 #app-title{
-   font-size: 1.3rem;
+   font-size: 20px;
    text-decoration: underline;
 }
 #app-para{
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 0.8rem;
-    text-align: justify;
+    font-size: 20px;
+    text-align: center;
+}
+.carousel-indicators{
+ display: none !important;
 }
 .button-containerimp{
     display: flex;

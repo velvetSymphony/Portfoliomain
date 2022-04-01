@@ -4,9 +4,9 @@ import { Button } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import "./styles/Work.css";
 import Gameimage from "./images/gamesite.PNG";
-import Ecommersiteimage from "./images/ecommercesite.PNG";
 import Jscalcimage from "./images/jscalcwebsite.PNG";
 import Weatherimage from "./images/Weathersite.PNG";
+import Portfolioimage from "./images/portfolio.PNG"
 
 const Work = () => {
   //functions to open new websites
@@ -22,21 +22,64 @@ const Work = () => {
   const sendit4 = () => {
     window.open("https://github.com/Abhishekcs96/weather", "_blank");
   };
-  const sendit5 = () => {
-    window.open("https://acs-ecommerceshop.netlify.app", "_blank");
-  };
-  const sendit6 = () => {
-    window.open("https://github.com/Abhishekcs96/Ecommerce-store", "_blank");
-  };
   const sendit7 = () => {
     window.open("https://abhishekcs96.github.io/jscalc/", "_blank");
   };
   const sendit8 = () => {
     window.open("https://github.com/Abhishekcs96/jscalc", "_blank");
   };
+  const sendit9 = () => {
+    window.open("https://gitlab.com/Abhishekcs96/Portfoliomain", "_blank");
+  };
+  const sendit10 = () => {
+    window.open("https://gitlab.com/Abhishekcs96/Portfoliomain", "_blank");
+  };
   return (
     <div className="carousel-info">
       <Carousel interval={null}>
+      <Carousel.Item>
+          <div className="card">
+            <div className="card-image">
+              <img
+                src={Portfolioimage}
+                alt="Portfolio"
+                id="carousel-images"
+                className="d-block w-100"
+              />
+            </div>
+            <div className="card-description">
+              <h3 className="h3-responsive" id="app-title">
+                Portfolio Website
+              </h3>
+              <p id="app-para">
+                My website hosted on AWS. Automated development lifecycle using 
+                various devops tools. 
+              </p>
+              <div className="button-containerimp">
+                <Button
+                  variant="outline-light"
+                  id="buttonimp"
+                  className="btn-sm"
+                  onClick={() => {
+                    sendit9();
+                  }}
+                >
+                  View Repo
+                </Button>
+                <Button
+                  variant="outline-light"
+                  id="buttonimp"
+                  className="btn-sm"
+                  onClick={() => {
+                    sendit10();
+                  }}
+                >
+                  View Blog
+                </Button>
+              </div>
+            </div>
+          </div>
+        </Carousel.Item>
         <Carousel.Item>
           <div className="card">
             <div className="card-image">
@@ -52,7 +95,7 @@ const Work = () => {
                 Game-browsing App
               </h3>
               <p id="app-para">
-                Interactive and responsive game-browsing list with sort and
+                Interactive game-browsing list with sort and
                 search functionality. 
               </p>
               <div className="button-containerimp">
@@ -96,8 +139,7 @@ const Work = () => {
                 Weather-Application
               </h3>
               <p id="app-para">
-                A responsive weather application that displays weather data
-                depending on your search query.
+                A weather application that displays weather data.
               </p>
               <div className="button-containerimp">
                 <Button
@@ -139,7 +181,7 @@ const Work = () => {
               </h3>
               <p id="app-para">
                 An interactive calculator with basic functionality. Built with
-                Vanilla JavaScript and styled using vanilla CSS.
+                Vanilla JavaScript.
               </p>
               <div className="button-containerimp">
                 <Button
@@ -156,47 +198,6 @@ const Work = () => {
                   className="btn-sm"
                   onClick={() => {
                     sendit8();
-                  }}
-                >
-                  View Repo
-                </Button>
-              </div>
-            </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="card">
-            <div className="card-image">
-              <img
-                src={Ecommersiteimage}
-                alt="Ecommerce"
-                id="carousel-images"
-                className="d-block w-100"
-              />
-            </div>
-
-            <div className="card-description">
-              <h3 className="h3-responsive" id="app-title">
-                Ecommerce-shopping website
-              </h3>
-              <p id="app-para">
-                A responsive shopping website to browse and select. 
-              </p>
-              <div className="button-containerimp">
-                <Button
-                  variant="outline-light"
-                  className="btn-sm"
-                  onClick={() => {
-                    sendit5();
-                  }}
-                >
-                  View Website
-                </Button>
-                <Button
-                  variant="outline-light"
-                  className="btn-sm"
-                  onClick={() => {
-                    sendit6();
                   }}
                 >
                   View Repo

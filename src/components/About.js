@@ -1,10 +1,10 @@
 import React from "react";
 import { Fade, Flip } from "react-reveal";
 import { DiJavascript1 } from "react-icons/di";
-import { FaReact } from "react-icons/fa";
+import { SiTerraform } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { FaAws } from "react-icons/fa";
-import { FaUbuntu } from "react-icons/fa";
+import { FaLinux } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { FiGitlab } from "react-icons/fi";
@@ -25,19 +25,19 @@ const About = () => {
           </h5>
           <h5 id="degree">A little bit about myself</h5>
           <p id="me-info">
-            I&apos;m a Master&apos;s graduate from the University of New South Wales,
-            Australia. A bit after graduation, I became interested in learning
-            more about coding and front end dev technologies such as reactJS to
-            broaden my horizons. Took my learning through the hands on route,
-            making projects and finally, developing this website. Around the end
-            of 2021, I had also set my sights on the CCNA and AWS SAA-C02
-            certifications to further my skillset across the networking and
-            cloud realms. Admittedly, my indecisiveness ended up making me take
-            a year off to study and build projects(partly due to COVID
+            I&apos;m a Master&apos;s graduate from the University of New South
+            Wales, Australia. A bit after graduation, I became interested in
+            learning more about coding and front end dev technologies such as
+            reactJS to broaden my horizons. Took my learning through the hands
+            on route, making projects and finally, developing this website.
+            Around the end of 2021, I had also set my sights on the CCNA and AWS
+            SAA-C02 certifications to further my skillset across the networking
+            and cloud realms. Admittedly, my indecisiveness ended up making me
+            take a year off to study and build projects(partly due to COVID
             disruption as well) but after much deliberation to see where my
-            interests were truly aligned, I decided seeking the cloud path with
-            a strongsuit in networking and some developer knowledge. And here I
-            am now, seeking opportunities in the field of cloud and devops!
+            interests were truly aligned, I decided seeking a future in the area
+            of cloud and devops, to which I am currently open to opportunities
+            in!
           </p>
         </div>
 
@@ -50,12 +50,12 @@ const About = () => {
                 <p id="skill-desc">JavaScript</p>
               </div>
               <div className="skill">
-                <FaReact size={55} />
-                <p id="skill-desc">React</p>
-              </div>
-              <div className="skill">
                 <FaPython size={55} />
                 <p id="skill-desc">Python</p>
+              </div>
+              <div className="skill">
+                <SiTerraform size={55} />
+                <p id="skill-desc">Terraform</p>
               </div>
               <div className="skill">
                 <FaGitAlt size={55} />
@@ -71,30 +71,32 @@ const About = () => {
               </div>
               <div className="skill">
                 <FaDocker size={55} />
-                <p id="skill-desc">Docker basics</p>
+                <p id="skill-desc">Docker</p>
               </div>
               <div className="skill">
-                <FaUbuntu size={55} />
-                <p id="skill-desc">Ubuntu Linux</p>
+                <FaLinux size={55} />
+                <p id="skill-desc">Linux(CentOS)</p>
               </div>
             </div>
           </Fade>
         </div>
         <div className="info-container">
           <p id="me-info">
-            I have a good foundational network background through my master&apos;s
-            studies and clearing my CCNA. Projects during my master&apos;s were
-            implemented using python and afterwards, I learnt javascript out of
-            interest. All my self-implemented projects were made using
-            javascript and react. I have worked on a basic level with Linux via
-            oracle virtualbox (mainly using Ubuntu). I&apos;m familiar with version
-            control tools such as Git, experimented with Docker and use Gitlab
-            as my primary tool for CI and CD. I have a strong footing in AWS,
-            having used it&apos;s services for hands-on lab practices and demos to
-            prepare for my exam. I am currently learning to implement
-            Infrastructure as code (IaC) through AWS (and possibly terraform) to
-            better my understanding of cloud and devops tools and deploy my
-            personal resources in the cloud.
+            I have a good foundational network background through my
+            master&apos;s studies and clearing my CCNA. Projects during my
+            master&apos;s were implemented using python and afterwards, I learnt
+            javascript out of interest. All my self-implemented projects were
+            made using javascript and react. I have worked on a basic level with
+            Linux via oracle virtualbox (mainly using CentOS). I&apos;m familiar
+            with version control tools such as Git, experimented with Docker and
+            use Gitlab as my primary tool for CI and CD. I have a strong footing
+            in AWS, having used it&apos;s services for hands-on lab practices
+            and demos to prepare for my exam. I am currently learning to
+            implement Infrastructure as code (IaC) using AWS SAM and Terraform
+            to better my understanding of IaC tools, ultimately gaining more
+            exposure with the toolset employed to empower devops life cycles and
+            using that knowledge to help automate and deploy my personal
+            resources to the cloud.
           </p>
         </div>
       </div>

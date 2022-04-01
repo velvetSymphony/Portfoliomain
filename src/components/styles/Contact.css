@@ -52,17 +52,23 @@
     align-items: center;
     text-align: center;
 }
+.submit-response{
+    margin: 0;
+    color: #e4cece;
+}
 
 .contact-para {
     font-size: 1rem;
     margin-bottom: 1%;
+    color: #e4cece;
 }
 
 .header-five {
     font-size: 16px;
+    color: #e4cece;
 }
 
-.visitcount{
+.visit-count{
     margin-top: 10%;
     color: #e4cece;
 }
@@ -81,10 +87,10 @@
     .header-five {
         margin-top: 4%;
         overflow-y: hidden;
-        font-size: 16px;
+        font-size: 14px;
     }
     .contact-para{
-        font-size: 16px;
+        font-size: 14px;
     }
     .button-submit:hover{
         background-color: beige;
@@ -94,6 +100,9 @@
     }
     .input-group>.form-control, .input-group>.form-select {
         height: 5vh;
+    }
+    .visit-count{
+        font-size: 16px;
     }
     
 }

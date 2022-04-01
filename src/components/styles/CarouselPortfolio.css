@@ -1,9 +1,13 @@
 #Portfolio{
-    padding: 2vw 0px;
+    height: 70vh;
     margin-top: 10vh;
 }
+.box-container
+/* Fixing styling */
+/*Mostly just testing around dev tools and figuring it out*/
 .carousel-container{
-    height: 80%;
+    height: 90%;
+    
 }
 .carousel-info{
     height: 100%;
@@ -26,10 +30,19 @@
 @media all and (min-width:320px) and (max-width:580px) {
     #Portfolio{
         height: 90vh;
+        overflow-y: hidden;
     }
-
+    .carousel-info{
+        height: 80%;
+       
+    }
+    .box-container
     .carousel-container{
-        height: 62%;
+        height: 100%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     }
   
     .h3-responsive {

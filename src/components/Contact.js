@@ -2,7 +2,7 @@ import React from "react";
 import { InputGroup } from "react-bootstrap";
 import { FormControl } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./styles/Contact.css";
 
 // Contact form to obtain input from user and connect to my backend hosted on aws.
@@ -11,23 +11,22 @@ import "./styles/Contact.css";
 
 // Visit counter javascript included here.
 // Fetching data from backend api gateway
-let submit = document.querySelector(".submit-response");
 
-  
+
 const Contact = () => {
-  const [visits, setVisits] = useState('')
-  const counterdisplay = (e) => {
-    e.preventDefault()
-  fetch("https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/visits")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-    console.log(e.data)
-    setVisits(data)
-  });
-}
-
   
+  const [visits, setVisits] = useState("");
+  useEffect(() => {
+    fetch(
+      "https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/visits"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setVisits(data);
+      });
+  }, []);
+
   // using useState to set initial state values of my data object
   const [data, setData] = useState({
     name: "",
@@ -48,33 +47,41 @@ const Contact = () => {
   };
 
   // Function to pass the data object to our api endpoint at Gateway using the fetchapi
-
-  const formsubmit = (e) => {
+  const [msg, setMsg] = useState('Email Sent')
+   const formsubmit = (e) => {
+    let submit = document.querySelector(".submit-response");
     e.preventDefault();
-    submit.innerHTML = "Sending...";
-    fetch(
-      "https://n8366r1weg.execute-api.ap-southeast-2.amazonaws.com/prod/contact",
-      {
-        method: "POST",
-        mode: "no-cors",
-        cache: "no-cache",
-        credentials: "same-origin",
-        redirect: "follow",
-        referrerPolicy: "no-referrer",
-        headers: {
-          "Content-type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(data),
-      }
-    ).then((response) => {
-      if (response.status === 0) {
-        submit.innerHTML = "Success";
-      } else {
-        submit.innerHTML = "Error, Please try again";
-      }
-    });
-  };
+    submit.textContent = "Sending..."
+      fetch(
+         "https://n8366r1weg.execute-api.ap-southeast-2.amazonaws.com/prod/contact",
+         {
+           method: "POST",
+           mode: "no-cors",
+           cache: "no-cache",
+           credentials: "same-origin",
+           redirect: "follow",
+           referrerPolicy: "no-referrer",
+           headers: {
+             "Content-type": "application/json",
+             Accept: "application/json",
+           },
+           body: JSON.stringify(data),
+         }
+       ).then((response) => {
+         console.log(response)
+         if (response.status === 0) {
+           setMsg('Email Sent')
+           console.log(msg)
+           submit.textContent=msg
+         } else {
+           setMsg('Failed, please try again')
+           submit.textContent = msg
+         }
+       });
+    
+    } 
+  
+  
 
   return (
     <div className="box-container" id="Contacts">
@@ -120,7 +127,7 @@ const Contact = () => {
                 onChange={handlechange}
               />
             </InputGroup>
-
+            <p className="submit-response"></p>
             <Button
               className="button-submit"
               variant="outline-light"
@@ -128,7 +135,6 @@ const Contact = () => {
             >
               Submit
             </Button>
-            <div className="submit-response">{""}</div>
           </div>
         </form>
         <div className="text-container">
@@ -137,7 +143,7 @@ const Contact = () => {
           </h5>
           <p className="contact-para">Please contact me at</p>
           <p className="contact-para">abhishekcs96@gmail.com</p>
-          <p className="visitcount" id="visits" onLoad={counterdisplay}>Visits : {visits}</p>
+          <p className="visit-count">Number of site visits : {visits}</p>
         </div>
       </div>
     </div>
