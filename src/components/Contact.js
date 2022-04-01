@@ -53,7 +53,7 @@ const Contact = () => {
     e.preventDefault();
     submit.textContent = "Sending..."
       fetch(
-         "https://n8366r1weg.execute-api.ap-southeast-2.amazonaws.com/prod/contact",
+         "https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/contact",
          {
            method: "POST",
            mode: "no-cors",
@@ -73,7 +73,7 @@ const Contact = () => {
            setMsg('Email Sent')
            console.log(msg)
            submit.textContent=msg
-         } else {
+         } else if(response.status === 500 || response.status === 400) {
            setMsg('Failed, please try again')
            submit.textContent = msg
          }
