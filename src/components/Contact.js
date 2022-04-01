@@ -16,11 +16,13 @@ let submit = document.querySelector(".submit-response");
   
 const Contact = () => {
   const [visits, setVisits] = useState('')
-  const counterdisplay = () => {
+  const counterdisplay = (e) => {
+    e.preventDefault()
   fetch("https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/visits")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
+    console.log(e.data)
     setVisits(data)
   });
 }
