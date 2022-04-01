@@ -12,18 +12,16 @@ import "./styles/Contact.css";
 // Visit counter javascript included here.
 // Fetching data from backend api gateway
 let submit = document.querySelector(".submit-response");
-
-  
-const Contact = () => {
-  const [visits, setVisits] = useState('')
+const [visits, setVisits] = useState('')
   fetch("https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/visits")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
     setVisits(data)
   });
+ 
+const Contact = () => {
 
-  
   // using useState to set initial state values of my data object
   const [data, setData] = useState({
     name: "",
@@ -133,7 +131,7 @@ const Contact = () => {
           </h5>
           <p className="contact-para">Please contact me at</p>
           <p className="contact-para">abhishekcs96@gmail.com</p>
-          <p className="visitcount" id="visits">{visits}</p>
+          <p className="visitcount" id="visits">Visits : {visits}</p>
         </div>
       </div>
     </div>
