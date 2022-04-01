@@ -12,10 +12,10 @@ import "./styles/Contact.css";
 // Visit counter javascript included here.
 // Fetching data from backend api gateway
 
-
 const Contact = () => {
-  
   const [visits, setVisits] = useState("");
+  //useEffect to avoid continuous re-rendering of the component and calling the fetch infinitely
+  //causing infinite lambda invocations
   useEffect(() => {
     fetch(
       "https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/visits"
@@ -47,49 +47,47 @@ const Contact = () => {
   };
 
   // Function to pass the data object to our api endpoint at Gateway using the fetchapi
-  const [msg, setMsg] = useState('Email Sent')
-   const formsubmit = (e) => {
+  const [msg, setMsg] = useState("Email Sent");
+  const formsubmit = (e) => {
     let submit = document.querySelector(".submit-response");
     e.preventDefault();
-    submit.textContent = "Sending..."
-      fetch(
-         "https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/contact",
-         {
-           method: "POST",
-           mode: "no-cors",
-           cache: "no-cache",
-           credentials: "same-origin",
-           redirect: "follow",
-           referrerPolicy: "no-referrer",
-           headers: {
-             "Content-type": "application/json",
-             Accept: "application/json",
-           },
-           body: JSON.stringify(data),
-         }
-       ).then((response) => {
-         console.log(response)
-         if (response.status === 0) {
-           setMsg('Email Sent')
-           console.log(msg)
-           submit.textContent=msg
-         } else if(response.status === 500 || response.status === 400) {
-           setMsg('Failed, please try again')
-           submit.textContent = msg
-         }
-       });
-    
-    } 
-  
-  
+    submit.textContent = "Sending...";
+    fetch(
+      "https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/contact",
+      {
+        method: "POST",
+        mode: "no-cors",
+        cache: "no-cache",
+        credentials: "same-origin",
+        redirect: "follow",
+        referrerPolicy: "no-referrer",
+        headers: {
+          "Content-type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    ).then((response) => {
+      console.log(response);
+      if (response.status === 0) {
+        setMsg("Email Sent");
+        console.log(msg);
+        submit.textContent = msg;
+        // Should include a catch here to identify rejected promises, will work on improving error handling.
+      } else if (response.status === 500 || response.status === 400) {
+        setMsg("Failed, please try again");
+        submit.textContent = msg;
+      }
+    });
+  };
 
   return (
     <div className="box-container" id="Contacts">
       <div className="content-container" id="contentcontainer">
         <h2 className="contact-title">Contact Me</h2>
         <p className="contact-description">
-          Feel free to get in touch and send me a message using the form below,
-          I always have a way to innovate things!
+          Feel free to get in touch and send me a message about any new
+          opportunities and openings you may have, appreciate it.
         </p>
         <div className="outline3"></div>
         <form onSubmit={formsubmit}>
@@ -138,9 +136,7 @@ const Contact = () => {
           </div>
         </form>
         <div className="text-container">
-          <h5 className="header-five">
-            Alternatively (if the above isn&apos;t working yet)
-          </h5>
+          <h5 className="header-five">Alternatively</h5>
           <p className="contact-para">Please contact me at</p>
           <p className="contact-para">abhishekcs96@gmail.com</p>
           <p className="visit-count">Number of site visits : {visits}</p>
