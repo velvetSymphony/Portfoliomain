@@ -45,13 +45,14 @@ const Contact = () => {
     });
     console.log([e.target.name], e.target.value);
   };
-
-  // Function to pass the data object to our api endpoint at Gateway using the fetchapi
+// Function to pass the data object to our api endpoint at Gateway using the fetchapi
   const [msg, setMsg] = useState("Email Sent");
   const formsubmit = (e) => {
     let submit = document.querySelector(".submit-response");
     e.preventDefault();
     submit.textContent = "Sending...";
+
+// using the init object of the fetch parameter to describe the nature of the api call.
     fetch(
       "https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/contact",
       {
