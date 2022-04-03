@@ -39,7 +39,7 @@ const Work = () => {
   };
   return (
     <div className="carousel-info">
-      <Carousel interval={null}>
+      <Carousel>
         <Carousel.Item>
           <div className="card">
             <div className="card-image">
@@ -77,7 +77,7 @@ const Work = () => {
                     sendit9();
                   }}
                 >
-                  View Repo(Frontend)
+                  Frontend
                 </Button>
                 <Button
                   variant="outline-light"
@@ -87,7 +87,7 @@ const Work = () => {
                     sendit11();
                   }}
                 >
-                  View Repo(Backend)
+                  Backend
                 </Button>
               </div>
             </div>
