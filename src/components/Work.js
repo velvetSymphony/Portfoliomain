@@ -87,7 +87,7 @@ const Work = () => {
                     sendit11();
                   }}
                 >
-                  View Repo(Serverless Backend)
+                  View Repo(Backend)
                 </Button>
               </div>
             </div>
