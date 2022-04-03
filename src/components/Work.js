@@ -6,7 +6,7 @@ import "./styles/Work.css";
 import Gameimage from "./images/gamesite.PNG";
 import Jscalcimage from "./images/jscalcwebsite.PNG";
 import Weatherimage from "./images/Weathersite.PNG";
-import Portfolioimage from "./images/portfolio.PNG"
+import Portfolioimage from "./images/portfolio.PNG";
 
 const Work = () => {
   //functions to open new websites
@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <div className="carousel-info">
       <Carousel interval={null}>
-      <Carousel.Item>
+        <Carousel.Item>
           <div className="card">
             <div className="card-image">
               <img
@@ -55,10 +55,20 @@ const Work = () => {
                 Portfolio Website
               </h3>
               <p id="app-para">
-                My website hosted on AWS. Automated development lifecycle using 
-                various devops tools. 
+                My website hosted on AWS. Automated development lifecycle using
+                various devops tools.
               </p>
               <div className="button-containerimp">
+                <Button
+                  variant="outline-light"
+                  id="buttonimp"
+                  className="btn-sm"
+                  onClick={() => {
+                    sendit10();
+                  }}
+                >
+                  View Blog
+                </Button>
                 <Button
                   variant="outline-light"
                   id="buttonimp"
@@ -79,16 +89,6 @@ const Work = () => {
                 >
                   View Repo(Serverless Backend)
                 </Button>
-                <Button
-                  variant="outline-light"
-                  id="buttonimp"
-                  className="btn-sm"
-                  onClick={() => {
-                    sendit10();
-                  }}
-                >
-                  View Blog
-                </Button>
               </div>
             </div>
           </div>
@@ -108,8 +108,8 @@ const Work = () => {
                 Game-browsing App
               </h3>
               <p id="app-para">
-                Interactive game-browsing list with sort and
-                search functionality. 
+                Interactive game-browsing list with sort and search
+                functionality.
               </p>
               <div className="button-containerimp">
                 <Button
