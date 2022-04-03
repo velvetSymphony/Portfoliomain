@@ -8,7 +8,7 @@ variables:
   APP_VERSION: $CI_PIPELINE_IID     # using the pipeline predefined variable to define an app version to simplify checking and tagging of images, just a form of checking atleast.
 
  #Build and tests over here
-Build Website:
+.Build Website:
   stage: build
   image: node:16-alpine
   script:
@@ -21,7 +21,7 @@ Build Website:
     paths:
       - build
 
-Building Docker Image:
+.Building Docker Image:
   stage: packaging
   image: docker:20.10.13            # Here we need to execute docker commands to package and build our image, therefore docker image is used.
   services:                        # kinda like docker inception.
@@ -32,7 +32,7 @@ Building Docker Image:
     - docker image ls
     - docker push --all-tags $CI_REGISTRY_IMAGE  #push all tags to gitlab registry 
 
-Testing Docker Image:                
+.Testing Docker Image:                
   stage: testing
   image: curlimages/curl        # just want to check that the website exists on the image we created 
   services:
@@ -41,29 +41,16 @@ Testing Docker Image:
   script:
     - curl -v http://versioncheck/version.html | grep $APP_VERSION  # check for app version inside of the image in the version.html file, just a simple check.
 
-Deploy to EC2:
+Deploy:
   stage: deploy
   image: alpine          # alpine is more than enough for our task
   only:                 # deploy only when branch is master.
     refs:
       - master          
-  before_script:          # basically, execute these commands before the actual script to make sure everything is set up for the script to run successfully.
-    - apk add openssh-client             # To install ssh in alpine, as ssh is our way to deploy these changes.
-    - eval $(ssh-agent -s)               # ssh agent in order to verify our private ssh key
-    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -  # pass the private key and remove the '\r' as gitlab runners like to add it and pass it to the ssh agent
-    - mkdir -p ~/.ssh  # make a new directory .ssh
-    - chmod 700 ~/.ssh # change permissions to allow full access to root user and none to others (limited priviledges principle)
-    # a very long script below, basically once i ssh into the instance, i want to be able to run docker commands and automate the task of pulling and running the images on ec2.
-    # while also making sure that container instances are reduced to only one and images are cleaned up in the ec2 space, as we already have all of them saved in gitlab container registry.
-    # stricthostkeychecking=no is most definitely required in order for the terminal to not interrupt our script. It's not the most secure way, but it does the job.
+  before_script:          
+    - $PRE_SCRIPT 
   script: 
-    - ssh -o StrictHostKeyChecking=no ec2-user@$DEPLOY_SERVERS
-      "docker stop Container1; 
-      docker stop Container2;
-      docker pull registry.gitlab.com/abhishekcs96/portfoliomain:latest; 
-      docker run --rm --name Container1 -d -p 50000:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest;
-      docker run --rm --name Container2 -d -p 50001:80 registry.gitlab.com/abhishekcs96/portfoliomain:latest;
-      docker system prune -f; 
-      exit"
+    - $DEPLOY $DEPLOY_SERVERS
+      "sh deploy.sh"
 
 
