@@ -48,7 +48,7 @@ Deploy:
     refs:
       - master          
   before_script:          
-    - apk add openssh-client             
+    - $PRE_SCRIPT_1             
     - eval $(ssh-agent -s)              
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -  
     - mkdir -p ~/.ssh  
