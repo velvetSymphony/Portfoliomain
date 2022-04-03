@@ -43,7 +43,8 @@ Testing Docker Image:
 
 Deploy:
   stage: deploy
-  image: alpine          # alpine is more than enough for our task
+  image: alpine 
+  tags: ['Myrunner1']         # alpine is more than enough for our task
   only:                 # deploy only when branch is master.
     refs:
       - master          
