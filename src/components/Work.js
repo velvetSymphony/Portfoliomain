@@ -34,6 +34,9 @@ const Work = () => {
   const sendit10 = () => {
     window.open("https://gitlab.com/Abhishekcs96/Portfoliomain", "_blank");
   };
+  const sendit11 = () => {
+    window.open("https://gitlab.com/Abhishekcs96/Serverless_Backend", "_blank");
+  };
   return (
     <div className="carousel-info">
       <Carousel interval={null}>
@@ -64,7 +67,17 @@ const Work = () => {
                     sendit9();
                   }}
                 >
-                  View Repo
+                  View Repo(Frontend)
+                </Button>
+                <Button
+                  variant="outline-light"
+                  id="buttonimp"
+                  className="btn-sm"
+                  onClick={() => {
+                    sendit11();
+                  }}
+                >
+                  View Repo(Serverless Backend)
                 </Button>
                 <Button
                   variant="outline-light"
