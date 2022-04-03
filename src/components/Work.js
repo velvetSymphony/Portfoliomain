@@ -32,10 +32,10 @@ const Work = () => {
     window.open("https://gitlab.com/Abhishekcs96/Portfoliomain", "_blank");
   };
   const sendit10 = () => {
-    window.open("https://gitlab.com/Abhishekcs96/Portfoliomain", "_blank");
+    window.open("https://github.com/Abhishekcs96/Portfoliomain", "_blank");
   };
   const sendit11 = () => {
-    window.open("https://gitlab.com/Abhishekcs96/Serverless_Backend", "_blank");
+    window.open("https://github.com/Abhishekcs96/Serverless_Backend", "_blank");
   };
   return (
     <div className="carousel-info">
