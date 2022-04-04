@@ -1,14 +1,9 @@
 #Portfolio{
-    height: 70vh;
     margin-top: 10vh;
 }
 .box-container
 /* Fixing styling */
 /*Mostly just testing around dev tools and figuring it out*/
-.carousel-container{
-    height: 90%;
-    
-}
 .carousel-info{
     height: 100%;
 }
