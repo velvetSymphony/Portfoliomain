@@ -41,6 +41,16 @@ Testing Docker Image:
   script:
     - curl -v http://versioncheck/version.html | grep $APP_VERSION  # check for app version inside of the image in the version.html file, just a simple check.
 
+DeployS3:
+  stage: deploy
+  tags: ['Myrunner1'] 
+  image: 
+    - name: amazon/aws-cli
+    - entrypoint: [""]
+  script:
+    - aws s3 sync build s3://$AWS_S3_BUCKET --delete
+  
+
 Deploy:
   stage: deploy
   image: alpine 
