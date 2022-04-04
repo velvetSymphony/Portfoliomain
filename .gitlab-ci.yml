@@ -42,8 +42,7 @@ Testing Docker Image:
     - curl -v http://versioncheck/version.html | grep $APP_VERSION  # check for app version inside of the image in the version.html file, just a simple check.
 
 DeployS3:
-  stage: deploy
-  tags: ['Myrunner1'] 
+  stage: deploy 
   image: 
     name: amazon/aws-cli
     entrypoint: [""]
