@@ -45,8 +45,8 @@ DeployS3:
   stage: deploy
   tags: ['Myrunner1'] 
   image: 
-    - name: amazon/aws-cli
-    - entrypoint: [""]
+    name: amazon/aws-cli
+    entrypoint: [""]
   script:
     - aws s3 sync build s3://$AWS_S3_BUCKET --delete
   
