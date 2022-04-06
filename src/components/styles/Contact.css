@@ -1,6 +1,6 @@
 #Contacts {
-    margin-top: 20vh;
-    height: 100vh;
+    margin-top: 60vh;
+    max-height: 100vh;
     
 }
 #contentcontainer{
@@ -133,4 +133,11 @@
     height: 5vh;
 }
     
+}
+
+@media all and (min-width:769px) and (max-width:991px) {
+  #Contacts{
+      margin-top: 40vh;
+  }
+
 }

@@ -32,14 +32,14 @@ const Work = () => {
     window.open("https://gitlab.com/Abhishekcs96/Portfoliomain", "_blank");
   };
   const sendit10 = () => {
-    window.open("https://github.com/Abhishekcs96/Portfoliomain", "_blank");
+    window.open("https://abhishekcs96.github.io", "_blank");
   };
   const sendit11 = () => {
     window.open("https://github.com/Abhishekcs96/Serverless_Backend", "_blank");
   };
   return (
     <div className="carousel-info">
-      <Carousel>
+      <Carousel interval = {null}>
         <Carousel.Item>
           <div className="card">
             <div className="card-image">
@@ -67,7 +67,7 @@ const Work = () => {
                     sendit10();
                   }}
                 >
-                  View Blog
+                  Read Post
                 </Button>
                 <Button
                   variant="outline-light"
@@ -158,6 +158,7 @@ const Work = () => {
                 <Button
                   variant="outline-light"
                   className="btn-sm"
+                  id="buttonimp"
                   onClick={() => {
                     sendit3();
                   }}
@@ -165,6 +166,7 @@ const Work = () => {
                   View Website
                 </Button>
                 <Button
+                id="buttonimp"
                   variant="outline-light"
                   className="btn-sm"
                   onClick={() => {
@@ -198,6 +200,7 @@ const Work = () => {
               </p>
               <div className="button-containerimp">
                 <Button
+                id="buttonimp"
                   variant="outline-light"
                   className="btn-sm"
                   onClick={() => {
@@ -207,6 +210,7 @@ const Work = () => {
                   View Website
                 </Button>
                 <Button
+                id="buttonimp"
                   variant="outline-light"
                   className="btn-sm"
                   onClick={() => {

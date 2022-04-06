@@ -11,6 +11,7 @@
     background-size: 100%;
     background-position: 0;
     background-color: transparent !important;
+    max-height: 70vh;
 }
 
 
@@ -30,7 +31,7 @@
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 20px;
+    font-size: 12px;
     text-align: center;
 }
 .carousel-indicators{
@@ -70,6 +71,9 @@
     .btn-sm{
         transform: scale(0.5);
     }
+    #buttonimp{
+        font-size: 15px;
+    }
     #carousel-images{
         overflow-y: hidden;
     }
@@ -91,6 +95,9 @@
     #app-para{
         font-size:1rem;
         overflow: hidden;
+    }
+    #buttonimp{
+        font-size: 12px;
     }
     .card{
         height: 50vh;

@@ -97,7 +97,17 @@ const About = () => {
             and Terraform to better my understanding of IaC tools, ultimately
             gaining more exposure with the toolset employed to empower devops
             life cycles and using that knowledge to help automate and deploy my
-            personal resources to the cloud.
+            personal resources to the cloud. Currently, this website is hosted
+            on AWS and the project&apos;s write-up can be read{" "}
+            <a
+              id="writeup-link"
+              href="https://abhishekcs96.github.io"
+              target={"blank"}
+              referrerPolicy="no_refferer"
+            >
+              here
+            </a>
+            .
           </p>
         </div>
       </div>
