@@ -18,7 +18,7 @@ const Contact = () => {
   //causing infinite lambda invocations
   useEffect(() => {
     fetch(
-      "https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/visits"
+      "https://2yaifzeoz8.execute-api.ap-southeast-2.amazonaws.com/Prod/visits"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -54,7 +54,7 @@ const Contact = () => {
 
 // using the init object of the fetch parameter to describe the nature of the api call.
     fetch(
-      "https://sch5qsrg1m.execute-api.ap-southeast-2.amazonaws.com/Prod/contact",
+      "https://2yaifzeoz8.execute-api.ap-southeast-2.amazonaws.com/Prod/contact",
       {
         method: "POST",
         mode: "no-cors",
