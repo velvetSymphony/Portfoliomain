@@ -90,7 +90,7 @@ const Mobilemenu = () => {
 
         <a
           className="Links"
-          href="https://www.linkedin.com/in/abhishek-chandra-sekar-4018a8137/"
+          href="www.linkedin.com/in/I-am-abhishek-chandra-sekar"
         >
           <FaLinkedin />
         </a>
