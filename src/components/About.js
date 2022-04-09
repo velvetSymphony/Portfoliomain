@@ -76,7 +76,7 @@ const About = () => {
               </div>
               <div className="skill">
                 <FaLinux size={55} />
-                <p id="skill-desc">Linux(CentOS)</p>
+                <p id="skill-desc">Linux</p>
               </div>
             </div>
           </Fade>

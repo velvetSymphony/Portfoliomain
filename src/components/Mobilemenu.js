@@ -84,13 +84,13 @@ const Mobilemenu = () => {
         <p>Contact</p>
       </Link>
  <div className="link-style">
-      <a className="Links" href="https://github.com/Abhishekcs96">
+      <a className="Links" href="https://github.com/Abhishekcs96" rel="noreferrer" target="_blank">
           <FaGithubSquare />
         </a>
 
         <a
           className="Links"
-          href="www.linkedin.com/in/I-am-abhishek-chandra-sekar"
+          href="https://www.linkedin.com/in/I-am-abhishek-chandra-sekar" rel="noreferrer" target="_blank"
         >
           <FaLinkedin />
         </a>

@@ -29,7 +29,7 @@ const Work = () => {
     window.open("https://github.com/Abhishekcs96/jscalc", "_blank");
   };
   const sendit9 = () => {
-    window.open("https://gitlab.com/Abhishekcs96/Portfoliomain", "_blank");
+    window.open("https://github.com/Abhishekcs96/Portfoliomain", "_blank");
   };
   const sendit10 = () => {
     window.open("https://abhishekcs96.github.io", "_blank");

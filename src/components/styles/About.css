@@ -76,6 +76,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 
+
     /*display: flex;
     flex-direction: row;
     justify-content: space-between;*/
@@ -115,6 +116,7 @@
     #skill-desc{
         font-size: 0.4rem;
     }
+    
     .About>span{
         display: unset!important;
     }

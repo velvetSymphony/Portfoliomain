@@ -51,7 +51,7 @@ const Home = () => {
           </a>
           <a
             className="Links"
-            href="www.linkedin.com/in/I-am-abhishek-chandra-sekar"
+            href="https://www.linkedin.com/in/I-am-abhishek-chandra-sekar"
             target="_blank"
             rel="noreferrer"
           >
