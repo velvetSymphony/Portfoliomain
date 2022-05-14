@@ -83,11 +83,11 @@ const About = () => {
         <div className="info-container">
           <p id="me-info">
             I have a good foundational network background through my previous internship, 
-            master&apos;s studies and clearing my CCNA which bolstered my experience with cisco related equipment. Projects during my
-            master&apos;s were implemented using python and afterwards, I learnt
+            master&apos;s studies and I have worked on a basic level with
+            Linux via oracle virtualbox (mainly using CentOS). Clearing my CCNA further improved my networking and IT knowledge. 
+            Projects during my master&apos;s were implemented using python and afterwards, I learnt
             javascript out of interest. All my self-implemented projects were
-            made using javascript and react. I have worked on a basic level with
-            Linux via oracle virtualbox (mainly using CentOS). I&apos;m familiar
+            made using javascript and react. I&apos;m familiar
             with version control tools such as Git, experimented with Docker and
             use Gitlab as my primary tool for CI and CD. I have a good level of
             familiarity with AWS, having used it&apos;s services to develop my
