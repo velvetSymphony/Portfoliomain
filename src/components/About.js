@@ -30,15 +30,14 @@ const About = () => {
             learning more about coding and front end dev technologies such as
             reactJS. Took my learning through the hands on route, making
             projects and finally, developing this website (only the front-end
-            part of it). Around the end of 2021, I had also set my sights on the
+            part of it). Around the mid-end of 2021, I had also set my sights on the
             CCNA and AWS SAA-C02 certifications to further my skillset across
             the networking and cloud fields in an attempt to explore the topics
             further in depth and also further develop this website by developing
             the backend and maintaining the infrastucture as well. I ended up
             taking about a year and a half off since graduation to accomplish
-            all of the above and after all the time, deliberating what
-            interested me the most, I decided seeking a future in the area of
-            cloud and devops, to which I am currently open to opportunities in.
+            all of the above and after all the time and now seeking a future in the area of
+            IT(networks, cloud and devops), to which I am currently open to opportunities in.
           </p>
         </div>
 
@@ -83,8 +82,8 @@ const About = () => {
         </div>
         <div className="info-container">
           <p id="me-info">
-            I have a good foundational network background through my
-            master&apos;s studies and clearing my CCNA. Projects during my
+            I have a good foundational network background through my previous internship, 
+            master&apos;s studies and clearing my CCNA which bolstered my experience with cisco related equipment. Projects during my
             master&apos;s were implemented using python and afterwards, I learnt
             javascript out of interest. All my self-implemented projects were
             made using javascript and react. I have worked on a basic level with
