@@ -19,5 +19,3 @@ is to understand the fundamentals, the concepts and apply them in your own perso
 Ofcourse, this does take into consideration the fact that you'll spend a lot more time understanding it, but the pay offs are
 much better in the long term (rather than trying to `brute-force` your way through certifications). 
 These are just my opinions though, YMMV.
-
-:wq

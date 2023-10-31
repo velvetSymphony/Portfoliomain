@@ -14,15 +14,14 @@ I've spent many a day fine-tuning servers, orchestrating cloud infrastructure, a
 when I perform git operations, deciphering and writing magic spells (scripts/programs) to automate basically as much of my job as I can.
 
 I'm a masters graduate from the University of New South Wales, Australia in the field of Telecommunications. 
-I thought it was good, but then I realised I liked the cloud and networks a tad bit more, thanks to my uni courses. It was like deciding
-to choose between pizza and pizza with extra cheese (unless you hate the extra cheese...in which case ignore what I just said).
-
+I thought it was good, but what I'm genuinely thankful for my time at uni was when I was introduced to *software defined networking* and the "cloud" (I know...buzzwords).
+There were only 2-3 courses that went into any sort of depth with regards to those topics, 
+but that alone was sufficient to get me hooked into IT in general.
+ 
 Since then, I've moved onto the more finer things in tech, like meetings.
 
 I also have a CCNA and AWS SAA-C02 certifications, preparing for
-which I found to be rather decent approaches to learning more about general technical concepts in IT. 
+which I found to be rather decent approaches to learning more about general technical concepts in IT (more about that in ./certifications). 
 
-In my free time, I usually like to go on day hikes and admiring pictures of Mountains in the himalayas (where I dream everyday of going). 
-I do enjoy doing tech stuff in my time off. You can find some (pretty useless) projects I work on at [my github](https://github.com).
-
-:wq
+In my free time, I usually like to go on day hikes and admiring pictures of mountains in the himalayas (where I dream of going everyday). 
+I do enjoy doing tech stuff in my time off as well. You can find some (pretty useless) projects I work on at [my github](https://github.com).
