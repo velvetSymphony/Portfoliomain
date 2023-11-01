@@ -17,7 +17,8 @@ palette = "tokyo-night-dark"
 # Sidebar: about/bio
 [params.about]
 title = "Portfolio"
-description = "What I do and like, built with terminal ricing in mind :D"
+description = "What I do and like, themed like my terminal :D"
+
 # To change image
 logo = "images/rice.svg"
 
@@ -53,6 +54,12 @@ url = "mailto:example@example.com"
     identifier = "certifications"
     name = "certifications"
     url = "/certifications/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "emoji-support"
+    name = "emoji-support"
+    url = "/emoji-support/"
     weight = 20
 
 [taxonomies]

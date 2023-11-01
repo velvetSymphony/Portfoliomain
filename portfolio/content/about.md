@@ -25,3 +25,9 @@ which I found to be rather decent approaches to learning more about general tech
 
 In my free time, I usually like to go on day hikes and admiring pictures of mountains in the himalayas (where I dream of going everyday). 
 I do enjoy doing tech stuff in my time off as well. You can find some (pretty useless) projects I work on at [my github](https://github.com).
+
+## Skills
+
+Here's a list of things I consider myself to be decent at:
+
+
