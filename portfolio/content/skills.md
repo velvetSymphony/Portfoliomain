@@ -16,3 +16,10 @@ Pretty much all the stuff I've listed below:
 - Security
 - Ruby
 - Azure
+
+I'll need to add icons to all these at some point...
+
+## TODO
+
+- Add icons to all of the above
+- Maybe also add more specific tools like Docker and stuff
