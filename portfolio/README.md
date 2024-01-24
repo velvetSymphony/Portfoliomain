@@ -7,18 +7,20 @@ Mention any of the topics below if you want me to appear out of the bush like [h
     - Python scripting
     - Shell scripting
 - Linux
-- The "Cloud" (Brownie points if they're AWS and Azure)
-- Git (love this piece of magic)
-- Networks (Death, taxes, packet loss)
-- Security
+- The "Cloud" (AWS and/or Azure)
+- Git
+- Networks (Especially troubleshooting these.)
+- Security (More network security like SSL and implementation of cryptographic algorithms for symmetric/asymmetric key exchanges and hashing)
 - Monitoring and Observability
-- Other buzz words like DevOps, Platform and SRE I guess
-- Did I mention ***Vim***? (I use Vim btw)
+- ***Vim***
+- Other buzz words like DevOps, Platform and SRE I guess and everything along with it (IaC, Docker etc..)
 
-And other topics that will also pique my interest very much...
-- Alpine Trekking
+And other topics that also pique my interest very much...
+- Alpine Trekking/Mountaineering
     - Bonus points if its High Altitude adventuring in and around the Himalayas.
-- RTS/Strategy Games (love Civ 5/6)
-- Manga/Anime ( why did they end Attack on Titan the way they did :( )
+- Music
+    - Enjoy all kinds, especially melodious electronic.
+- Sports
+    - Football (the real one) is probably what I follow the most, though I'm interested in anything.
 
 :wq

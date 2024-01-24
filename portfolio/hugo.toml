@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-uk'
-title = 'Woooo!, Welcome to my Portfolio'
+title = 'Hello there!, Welcome to my Portfolio'
 theme = 'risotto'
 paginate = 3
 DefaultContentLanguage = "en"
@@ -51,7 +51,7 @@ url = "mailto:example@example.com"
   
   [[menu.main]]
     identifier = "certifications"
-    name = "certifications"
+    name = "Certifications"
     url = "/certifications/"
     weight = 20
 
