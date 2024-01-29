@@ -3,7 +3,7 @@ title = 'Certifications'
 description = "Certs"
 date = 2023-10-30T22:20:21+11:00
 aliases = ["certifications", "certs"] 
-draft = true
+draft = false
 author = "Abhishek Chandrasekar"
 +++
 
