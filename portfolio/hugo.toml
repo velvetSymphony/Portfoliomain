@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://localhost:3000'
 languageCode = 'en-uk'
 title = 'Hello there!, Welcome to my Portfolio'
 theme = 'risotto'
