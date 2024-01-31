@@ -54,6 +54,12 @@ url = "mailto:example@example.com"
     name = "Certifications"
     url = "/certifications/"
     weight = 20
+  
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 20
 
 [taxonomies]
 category = "categories"
