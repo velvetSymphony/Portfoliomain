@@ -20,6 +20,11 @@ HOST_PORT=3000
 CONTAINER_PORT=3000
 IMAGE_NAME="dev"
 
+# Build static files once again by running hugo
+
+>&2 yellow_echo "Building static files"
+if [[ -e ./hugo.toml ]]; then hugo --config hugo.toml; else red_echo "Error!, unable to find hugo config file. Exiting"; exit 1; fi
+
 >&2 yellow_echo "Stopping current container"
 sudo docker ps -a | awk '{print $NF}' | tail -n +2 | xargs -I{} -- sh -c 'sudo docker stop {}'
 
