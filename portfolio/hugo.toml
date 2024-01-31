@@ -1,6 +1,6 @@
 baseURL = 'http://localhost:3000'
 languageCode = 'en-uk'
-title = 'Hello there!, Welcome to my Portfolio'
+title = 'Hello!'
 theme = 'risotto'
 paginate = 3
 DefaultContentLanguage = "en"
