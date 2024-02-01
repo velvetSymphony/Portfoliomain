@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 yellow_echo() {
     local text="$1"
     echo -e "\e[33m${text}\e[0m"
