@@ -1,6 +1,6 @@
 baseURL = 'http://localhost:3000'
 languageCode = 'en-uk'
-title = 'Hello!'
+title = 'Hello! Welcome to my Portfolio'
 theme = 'risotto'
 paginate = 3
 DefaultContentLanguage = "en"
@@ -50,9 +50,9 @@ url = "mailto:example@example.com"
     weight = 20
   
   [[menu.main]]
-    identifier = "certifications"
-    name = "Certifications"
-    url = "/certifications/"
+    identifier = "projects & certifications"
+    name = "Projects & Certifications"
+    url = "/projects_and_certifications/"
     weight = 20
   
   [[menu.main]]

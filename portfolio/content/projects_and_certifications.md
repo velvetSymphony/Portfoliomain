@@ -1,11 +1,18 @@
 +++
-title = 'Certifications'
-description = "Certs"
+title = 'Projects & Certifications'
+description = "projects and certs"
 date = 2023-10-30T22:20:21+11:00
-aliases = ["certifications", "certs"] 
 draft = false
 author = "Abhishek Chandrasekar"
 +++
+
+My [github](https://github.com/velvetSymphony) has some of the stuff I've worked on/attempted to work on. I think the one single project I'm really
+interested in setting up is basically a trekking preparation tool, which I thought would be a good idea given I've had to prepare for a lengthy one 
+recently. This is a fairly big one and I anticipate that I'll restart it sometime this year once again (hopefully!). I will need to rewrite some of the 
+docs and also the tools I'm using, but otherwise excited to get that going. 
+
+Feel free to also have a look at my dotfiles, although I'm willing to bet that most of you already have a much better setup. It is very much a work in progress
+and I hope to keep filling it up with more of such config files.
 
 As mentioned in my [about](https://{base_url}/certifications), I have achieved the following certifications:
 - [AWS Certified Solutions Architect Associate (AWS SAA CO2)](https://www.credly.com/badges/449f21be-fa89-4291-b641-abbd8f070611/public_url)
@@ -13,7 +20,6 @@ As mentioned in my [about](https://{base_url}/certifications), I have achieved t
 
 What I liked about these certifications is that they provided me with a decent enough knowledge to start
 off working in IT and also more generally, improved my understanding of concepts and technologies used in the IT world.
-
 I won't really go into too much detail about how I prepared for these, there's already lots of resources out there that will
 help people get started. I think though, that how much of this knowledge actually transfers over into work depends on how you prepare for one.
 
