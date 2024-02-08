@@ -7,5 +7,6 @@ draft = false
 author = "Abhishek Chandrasekar"
 +++
 
-I used to have my own github page, which documented my preparation journey for treks and stuff,
-but I'll need to revamp the whole thing now so this space basically acts as a placeholder.
+I've considered the idea of having a blog page in the past. It's mostly going to be non-technical, catering to my other interests.
+And therefore what I may do is just link my blog page to here.
+This space basically acts as a placeholder for now.
