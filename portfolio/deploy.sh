@@ -25,13 +25,13 @@ IMAGE_NAME="dev"
 if [[ -e ./hugo.toml ]]; then hugo --config hugo.toml; else red_echo "Error!, unable to find hugo config file. Exiting"; exit 1; fi
 
 >&2 yellow_echo "Stopping current container"
-sudo docker ps -a | awk '/nginx/ {print $NF}' | tail -n +2 | xargs -I{} -- sh -c 'sudo docker stop {}'
+sudo docker ps -a | awk '/nginx/ {print $NF}' | xargs -I{} -- sh -c 'sudo docker stop {}'
 
 >&2 yellow_echo "Removing docker container"
-sudo docker ps -a | awk '/nginx/ {print $NF}' | tail -n +2 | xargs -I{} -- sudo docker remove {}
+sudo docker ps -a | awk '/nginx/ {print $NF}' | xargs -I{} -- sudo docker remove {}
 
 >&2 yellow_echo "Removing previous docker images..."
-sudo docker images | awk '/"${IMAGE_NAME}"/ {print $1}' | tail -n +2 | xargs -I{} -- sudo docker rmi {}
+sudo docker images | awk '/"${IMAGE_NAME}"/ {print $1}' | xargs -I{} -- sudo docker rmi {}
 
 >&2 green_echo "Building new docker image..."
 sudo docker build . -t "${IMAGE_NAME}"
