@@ -2,43 +2,42 @@ baseURL = 'http://localhost:3000'
 languageCode = 'en-uk'
 title = 'Hello! Welcome to my Portfolio'
 theme = 'risotto'
-paginate = 3
+#paginate = 3
 DefaultContentLanguage = "en"
-enableInlineShortcodes = true
+#enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 sectionPagesMenu = "main"
 
 [params]
-noindex = false
+    noindex = false
 
 [params.theme]
-palette = "tokyo-night-dark"
+    palette = "tokyo-night-dark"
 
 # Sidebar: about/bio
 [params.about]
-title = "Portfolio"
-description = "What I do and like, built with terminal ricing in mind :D"
+    title = "Portfolio"
+    description = "What I do and like, built with terminal ricing in mind :D"
 # To change image
-logo = "images/mountain-1-svgrepo-com.svg"
+    logo = "images/mountain-1-svgrepo-com.svg"
 
 
 [[params.socialLinks]]
-icon = "fa-brands fa-github"
-title = "GitHub"
-url = "https://github.com/velvetSymphony"
+    icon = "fa-brands fa-github"
+    title = "GitHub"
+    url = "https://github.com/velvetSymphony"
 
 [[params.socialLinks]]
-icon = "fa-brands fa-linkedin"
-title = "LinkedIn"
-url = "https://linkedin.com/in/its-abhishek-chandrasekar"
+    icon = "fa-brands fa-linkedin"
+    title = "LinkedIn"
+    url = "https://linkedin.com/in/its-abhishek-chandrasekar"
 
 [[params.socialLinks]]
-icon = "fa-solid fa-envelope"
-title = "Email"
-url = "abhishekcs96@gmail.com"
+    icon = "fa-solid fa-envelope"
+    title = "Email"
+    url = "abhishekcs96@gmail.com"
 
 [menu]
-
   [[menu.main]]
     identifier = "about"
     name = "About"
