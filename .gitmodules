@@ -1,6 +1,3 @@
-[submodule "portfolio/themes/cupper-hugo-theme"]
-	path = portfolio/themes/cupper-hugo-theme
-	url = https://github.com/zwbetz-gh/cupper-hugo-theme.git
 [submodule "portfolio/themes/hugo-theme-monochrome"]
 	path = portfolio/themes/hugo-theme-monochrome
 	url = https://github.com/kaiiiz/hugo-theme-monochrome.git
