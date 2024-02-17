@@ -1,5 +1,2 @@
 ./portfolio/public/*
 ./portfolio/hugo_website
-./portfolio/package,json
-./portfolio/package-lock.json
-./portfolio/nodemodules/*

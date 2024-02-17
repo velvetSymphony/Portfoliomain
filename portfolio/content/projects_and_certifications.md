@@ -15,7 +15,7 @@ docs and also the tools I'm using, but otherwise excited to get that going.
 Feel free to also have a look at my dotfiles, although I'm willing to bet that most of you already have a much better setup. It is very much a work in progress
 and I hope to keep filling it up with more of such config files.
 
-### Certifications
+## Certifications
 As mentioned in my [about](https://{base_url}/certifications), I have achieved the following certifications:
 - [AWS Certified Solutions Architect Associate (AWS SAA CO2)](https://www.credly.com/badges/449f21be-fa89-4291-b641-abbd8f070611/public_url)
 - [Cisco Certified Network Associate (CCNA)](https://www.credly.com/badges/80b37738-5cdb-466b-894c-cc62de7a3b5c/public_url)
