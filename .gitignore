@@ -1,2 +1,3 @@
-./portfolio/public/*
-./portfolio/hugo_website
+./frontend/public/*
+./frontend/hugo_website
+./backend/ruff_cache/*
