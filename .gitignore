@@ -1,3 +1,7 @@
+# Frontend public static files stuff
 ./frontend/public/*
 ./frontend/hugo_website
+./frontend/.hugo_build.lock
+
+# Backend
 ./backend/ruff_cache/*
