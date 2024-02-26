@@ -1,3 +1,5 @@
+updated_table.sql
+
 # Frontend public static files stuff
 ./frontend/public/*
 ./frontend/hugo_website
