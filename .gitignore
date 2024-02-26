@@ -5,3 +5,4 @@
 
 # Backend
 ./backend/ruff_cache/*
+./backend/pyserver-logs/
