@@ -1,11 +1,11 @@
 updated_table.sql
 
 # Frontend public static files stuff
-./frontend/public/
-./frontend/resources/
-./frontend/hugo_website
-./frontend/.hugo_build.lock
+frontend/public/
+frontend/resources/
+frontend/hugo_website
+frontend/.hugo_build.lock
 
 # Backend
-./backend/ruff_cache/
-./backend/pyserver-logs/
+backend/ruff_cache/
+backend/pyserver-logs/
