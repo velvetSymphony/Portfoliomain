@@ -22,7 +22,7 @@ IMAGE_NAME="dev"
 # Build static files once again by running hugo
 
 >&2 yellow_echo "Building static files"
-if [[ -e ./hugo.toml ]]; then hugo --config hugo.toml; else red_echo "Error!, unable to find hugo config file. Exiting"; exit 1; fi
+hugo || { echo "Error!, unable to find hugo config file. Exiting"; exit 1; }
 
 >&2 yellow_echo "Stopping current container"
 sudo docker ps -a | awk '/nginx/ {print $NF}' | xargs -I{} -- sh -c 'sudo docker stop {}'
