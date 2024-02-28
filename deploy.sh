@@ -19,10 +19,16 @@ HOST_PORT=3000
 CONTAINER_PORT=3000
 IMAGE_NAME="dev"
 
-# Build static files once again by running hugo
+if [[ ! -d "frontend" ]]; then 
+    >&2 red_echo "Directory \"frontend\" does not exist. Exiting" 
+    exit 1 
+fi
 
 >&2 yellow_echo "Building static files"
-hugo || { echo "Error!, unable to find hugo config file. Exiting"; exit 1; }
+(cd frontend && hugo) || { red_echo "Error!, unable to find hugo config file. Exiting"; exit 1; }
+
+>&2 yellow_echo "Injecting vote template html"
+python3 inject.py
 
 >&2 yellow_echo "Stopping current container"
 sudo docker ps -a | awk '/nginx/ {print $NF}' | xargs -I{} -- sh -c 'sudo docker stop {}'
@@ -34,7 +40,7 @@ sudo docker ps -a | awk '/nginx/ {print $NF}' | xargs -I{} -- sudo docker remove
 sudo docker images | awk '/"${IMAGE_NAME}"/ {print $1}' | xargs -I{} -- sudo docker rmi {}
 
 >&2 green_echo "Building new docker image..."
-sudo docker build . -t "${IMAGE_NAME}"
+sudo docker build -t "${IMAGE_NAME}" -f dockerfiles/nginx_server .
 
 >&2 green_echo "Running new container... in background"
 sudo docker run -p $HOST_PORT:$CONTAINER_PORT "${IMAGE_NAME}" &
