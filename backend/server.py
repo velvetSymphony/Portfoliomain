@@ -2,6 +2,7 @@
 
 import http.server
 import subprocess
+import json
 from typing import Any
 
 
@@ -25,10 +26,15 @@ class respond_requests(http.server.BaseHTTPRequestHandler):
             )
 
     # gotta override handlers using this format
-    def do_GET(self):
+    def do_POST(self):
+        print(self.headers)
+        content_length = int(self.headers['Content-Length'])
+        body = self.rfile.read(content_length)
+        decoded_data = json.loads(body)
+        self.log_message("Message: %s", f"Payload data is {decoded_data}")
         self.log_message("Message: %s", "Received request. Processing...")
         result = subprocess.run(
-            ["python3", "update_records.py"], capture_output=True, text=True
+            ["python3", "update_records.py", "Annapurna_Circuit"], capture_output=True, text=True
         )
         if result.returncode == 0:
             self.log_request(200, "success")

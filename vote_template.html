@@ -1,6 +1,6 @@
     <h2>Trek Poll</h1>
     <div id="poll">
-        <h3>Vote for Your Preferred Trek:</h2>
+    or Your Preferred Trek:</h2>
     <form id="pollForm">
             <label>
                 <input type="radio" name="trek" value="Everest Base Camp"> Everest Base Camp
@@ -49,4 +49,15 @@
             </table>
         </div>
     </div>
+    <script>
+            document.addEventListener("DOMContentLoaded", updatePolls())
+            function updatePolls() {
+                const poll = document.getElementById('poll')
+                const leaderboard = document.getElementById('leaderboard')
+                poll.addEventListener("submit", function trigger(event) {
+                    console.log('Event Object:', event)
+                }
+            )
+        }
+    </script>
 <h2 id="interests">Interests</h2>
